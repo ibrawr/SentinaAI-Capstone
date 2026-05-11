@@ -1,4 +1,4 @@
-# SentinaAI — Smart Venue Intelligence Platform
+# SentinaAI - Smart Venue Intelligence Platform
 
 > **Capstone Project** · University of Wollongong in Dubai · CSIT321 · Team Cyber6  
 >  Grade: 85 (High Distinction) · Developed Sep 2025 – Mar 2026
@@ -16,10 +16,10 @@ The system was built to address a real problem: large venues generate massive vo
 - **Predictive occupancy forecasting** using ML models to anticipate crowd distribution and support proactive resource allocation
 - **Sustainability intelligence** tracking energy consumption, carbon emissions, and HVAC efficiency per zone with AI-generated optimisation recommendations
 - **Exhibitor analytics portal** with booth-level visitor heatmaps, dwell time analysis, engagement scoring, and exportable reports
-- **3D Digital Twin** of the venue with live colour-coded overlays for occupancy, CO₂, energy, and anomaly states — plus history playback and sandbox simulation modes
+- **3D Digital Twin** of the venue with live colour-coded overlays for occupancy, CO₂, energy, and anomaly states - plus history playback and sandbox simulation modes
 - **Crowd-aware indoor navigation** using Dijkstra pathfinding weighted by live occupancy data, with real-time rerouting around congested zones
 - **Rule-based analytics assistant** (Senti) with role-specific guided flows for operations, sustainability, and exhibitor users
-- **Role-based dashboards** for Operations Managers, SOC Analysts, Sustainability Managers, Exhibitors, and Super Admins — each scoped to their domain
+- **Role-based dashboards** for Operations Managers, SOC Analysts, Sustainability Managers, Exhibitors, and Super Admins - each scoped to their domain
 
 ---
 
@@ -61,7 +61,7 @@ IoT Edge Devices → MQTT Broker (EMQX, mTLS) → AI & Navigation Services → D
 ## Dashboards
 
 ### Operations Dashboard
-Full venue operational visibility — live occupancy across 26 halls, device health, active alerts, event management, exhibitor and booth tracking, and access to the navigation map and digital twin.
+Full venue operational visibility - live occupancy across 26 halls, device health, active alerts, event management, exhibitor and booth tracking, and access to the navigation map and digital twin.
 
 ![Operations Dashboard](screenshots/ops_dash.png)
 
@@ -70,7 +70,7 @@ Full venue operational visibility — live occupancy across 26 halls, device hea
 ![Report Generation](screenshots/generate_report.png)
 
 ### Sustainability Dashboard
-Energy and environmental monitoring — per-hall energy consumption, carbon footprint tracking, HVAC efficiency scoring, CO₂ and comfort metrics, and AI-generated optimisation recommendations.
+Energy and environmental monitoring - per-hall energy consumption, carbon footprint tracking, HVAC efficiency scoring, CO₂ and comfort metrics, and AI-generated optimisation recommendations.
 
 ![Sustainability Dashboard Home](screenshots/sust_home.png)
 
@@ -81,7 +81,7 @@ Energy and environmental monitoring — per-hall energy consumption, carbon foot
 ![Sustainability Report](screenshots/reports.png)
 
 ### Exhibitor Portal
-Booth-level analytics — visitor density heatmaps, dwell time, engagement confidence scoring, historical comparison charts, and exportable PDF and Excel reports.
+Booth-level analytics - visitor density heatmaps, dwell time, engagement confidence scoring, historical comparison charts, and exportable PDF and Excel reports.
 
 ![Exhibitor Home](screenshots/exh_home.png)
 
@@ -90,7 +90,7 @@ Booth-level analytics — visitor density heatmaps, dwell time, engagement confi
 ![Exhibitor Analytics](screenshots/exh_analytics.png)
 
 ### SOC Dashboard
-Security operations centre view — AI-generated anomaly alerts classified by severity and type, threat trend analytics, security logs, and a quarantine KPI tracking compromised devices.
+Security operations centre view - AI-generated anomaly alerts classified by severity and type, threat trend analytics, security logs, and a quarantine KPI tracking compromised devices.
 
 ![SOC Home](screenshots/soc_home.png)
 
