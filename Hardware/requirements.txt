@@ -1,0 +1,3 @@
+opencv-python
+adafruit-circuitpython-dht
+psycopg2-binary

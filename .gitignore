@@ -1,0 +1,42 @@
+__pycache__/
+__pycache__ /
+node_modules/
+*.pyc
+.venv/
+venv/
+/apps/navigation_web/backend/__pycache__
+apps/navigation_web/.claude/settings.local.json
+
+# TLS certificates — generated locally, never committed
+# Private keys must never enter version control
+services/mqtt-broker/certs/
+
+# AI skills (installed locally via npx skills)
+.agents/
+.claude/skills/
+skills-lock.json
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+/.claude
+/documents

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SentinaAI Assistant Widget</title>
+  <link rel="stylesheet" href="/ui/styles.css" />
+</head>
+<body>
+  <div class="page-hint">
+    <div class="page-hint__badge">SentinaAI</div>
+    <h1 id="pageTitle">SentinaAI Assistant Widget Demo</h1>
+    <p id="pageHintText">This page demonstrates the role-based Senti assistant in light mode.</p>
+  </div>
+
+  <button id="launcher" class="launcher" aria-label="Open Senti Assistant">
+    <span class="launcher__pulse"></span>
+    <span class="launcher__icon">✦</span>
+    <span id="launcherTooltip" class="launcher__tooltip">Senti Assistant</span>
+  </button>
+
+  <aside id="widgetShell" class="widget-shell hidden">
+    <section id="savedViewsPanel" class="saved-views-panel hidden">
+      <div class="saved-views-panel__header">
+        <h3>Saved views</h3>
+      </div>
+      <div id="savedViewsList" class="saved-views-list"></div>
+    </section>
+
+    <section id="widget" class="widget" aria-live="polite">
+      <header class="widget__header">
+        <div>
+          <p id="assistantEyebrow" class="eyebrow">Role assistant</p>
+          <h2 id="assistantTitle">Senti Assistant</h2>
+        </div>
+        <div class="header-actions">
+          <button id="expandBtn" class="icon-btn" title="Expand">⤢</button>
+          <button id="closeBtn" class="icon-btn" title="Close">✕</button>
+        </div>
+      </header>
+
+      <div id="tabBar" class="tab-bar"></div>
+      <div id="conversation" class="conversation"></div>
+
+      <div id="saveViewBar" class="save-view-bar hidden">
+        <input id="saveViewName" type="text" placeholder="Name this saved view" maxlength="100" />
+        <button id="confirmSaveViewBtn" class="primary-btn success-btn">Save</button>
+        <button id="cancelSaveViewBtn" class="ghost-btn">Cancel</button>
+      </div>
+
+      <footer class="widget__footer">
+        <div id="actionArea" class="action-area"></div>
+      </footer>
+    </section>
+  </aside>
+
+  <script src="/ui/app.js"></script>
+</body>
+</html>

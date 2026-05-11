@@ -1,0 +1,243 @@
+.sustPage {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.sustHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.headerTitle {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.statusBadge {
+    margin-left: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    padding: 0 10px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+.statusBadge.green {
+    background: rgba(0, 128, 43, .15);
+    color: #065f1f;
+}
+
+.statusBadge.amber {
+    background: rgba(245, 158, 11, .18);
+    color: #92400e;
+}
+
+.statusBadge.red {
+    background: rgba(220, 38, 38, .18);
+    color: #991b1b;
+}
+
+
+.backBtn {
+    background: #00802B;
+    border: none;
+    color: white;
+    font-weight: 800;
+    border-radius: 12px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.backBtn.big {
+    padding: 12px 24px;
+}
+
+.backBtn:hover {
+    background: #006b24;
+}
+
+
+.kpiRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+
+.kpiCard {
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+}
+
+.kpiLabel {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.kpiValue {
+    font-size: 34px;
+    font-weight: 900;
+}
+
+
+
+.kpiCard.energy.green {
+    background: #00802B;
+    color: white;
+}
+
+.kpiCard.energy.amber {
+    background: #b45309;
+    color: white;
+}
+
+.kpiCard.energy.red {
+    background: #991b1b;
+    color: white;
+}
+
+
+.kpiCard.energy .kpiLabel {
+    color: rgba(255, 255, 255, .9);
+}
+
+.kpiCard.energy .kpiValue {
+    color: #ffffff;
+}
+
+
+.kpiCard.neutral {
+    background: white;
+    border: 1px solid #e5e7eb;
+}
+
+.kpiCard.neutral .kpiLabel {
+    color: #6b7280;
+}
+
+.kpiCard.neutral .kpiValue {
+    color: #0f172a;
+}
+
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 16px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 22px;
+    border: 1px solid #e5e7eb;
+}
+
+
+.cardTitle {
+    color: #00802B;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 26px;
+}
+
+.infoGrid label {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.infoGrid div {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.metricsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.metricsTable td {
+    padding: 16px 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.metricsTable td:last-child {
+    text-align: right;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.aiCard {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 20px 24px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+}
+
+.aiHeader {
+    font-size: 20px;
+    font-weight: 900;
+    color: #00802B;
+    margin-bottom: 16px;
+}
+
+.aiContent {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.aiRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aiLabel {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 700;
+}
+
+.aiAction {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.aiBadge {
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.aiBadge.green {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.aiBadge.red {
+    background: #fee2e2;
+    color: #991b1b;
+}

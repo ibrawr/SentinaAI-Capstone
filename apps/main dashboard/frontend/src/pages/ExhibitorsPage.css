@@ -1,0 +1,396 @@
+.opsTheme .exhibitorsPage,
+.exhibitorsPage{
+  background:#f5f6f8;
+  min-height:100%;
+}
+
+.opsTheme .exhibitorsPage .pageInner,
+.exhibitorsPage .pageInner{
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  padding: 22px 26px;
+}
+
+
+.exhibitorsHeaderRow{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:16px;
+}
+
+.exhibitorsHeaderRight{
+  display:flex;
+  align-items:center;
+}
+
+.exhibitorsCountTop{
+  font-size:13px;
+  color:#E8486F;
+  font-weight:700;
+  text-align:right;
+}
+
+.exhibitorsControlsCard{
+  margin-top:14px;
+  background:#fff;
+  border:1px solid #eef0f2;
+  border-radius:14px;
+  padding:14px;
+}
+
+.exhibitorsFiltersRow{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:nowrap;
+}
+
+@media(max-width:1250px){
+  .exhibitorsFiltersRow{
+    flex-wrap:wrap;
+  }
+}
+
+
+.filterPill{
+  height:34px;
+  border-radius:10px;
+  background:#d9d9d9;
+  border:1px solid #d2d7dc;
+  padding:0 12px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  color:#64748b;
+
+  box-shadow:
+  inset 0 1px 0 rgba(255,255,255,0.55),
+  0 1px 0 rgba(15,23,42,0.04);
+}
+
+.filterPill:hover{
+  background:#d4d8db;
+}
+
+.pillSearch{width:300px;min-width:240px}
+.pillEvent{width:240px}
+.pillTier{width:170px}
+.pillIndustry{width:170px}
+.pillCountry{width:170px}
+.pillStatus{width:150px}
+
+.pillInput{
+  width:100%;
+  border:0;
+  outline:none;
+  background:transparent;
+  appearance:none;
+  -webkit-appearance:none;
+  padding:0;
+  margin:0;
+  font-size:13px;
+  font-weight:500;
+  font-family:inherit;
+  color:inherit;
+  -webkit-text-fill-color: currentColor;
+  line-height:34px;
+}
+
+.pillInput::placeholder{
+  color:#64748b;
+  font-size:13px;
+  font-weight:500;
+  font-family:inherit;
+  line-height:34px;
+  opacity:1;
+}
+
+.pillSelectWrap{
+  position:relative;
+}
+
+.pillSelect{
+  width:100%;
+  height:100%;
+  border:0;
+  outline:none;
+  background:transparent;
+  appearance:none;
+  -webkit-appearance:none;
+  padding:0;
+  padding-right:26px;
+  margin:0;
+  font-size:13px;
+  font-weight:500;
+  font-family:inherit;
+  color:inherit;
+  -webkit-text-fill-color: currentColor;
+  cursor:pointer;
+  line-height:34px;
+}
+
+.pillRightCaret{
+  position:absolute;
+  right:12px;
+  top:50%;
+  transform:translateY(-50%);
+
+  border-left:5px solid transparent;
+  border-right:5px solid transparent;
+  border-top:6px solid #133250;
+}
+
+
+.exhibitorsControlsBottomRow{
+  margin-top:12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+
+.clearFiltersBtn{
+  height:34px;
+  padding:0 14px;
+  border-radius:10px;
+  border:1px solid #E8486F;
+  background:#E8486F;
+  font-size:13px;
+  font-weight:600;
+  color:white;
+  cursor:pointer;
+}
+
+.clearFiltersBtn:hover{
+  background:#d93f65;
+}
+
+
+.exhibitorsTableCard{
+  margin-top:14px;
+  background:white;
+  border:1px solid #eef0f2;
+  border-radius:14px;
+  box-shadow:0 10px 28px rgba(15,23,42,0.06);
+  overflow:hidden;
+}
+
+.exhibitorsTableScroll{
+  overflow-x:auto;
+}
+
+.exhibitorsTable{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.exhibitorsTable thead th{
+  background:#fbfbfc;
+  color:#E8486F;
+  font-size:12px;
+  font-weight:800;
+  text-align:left;
+  padding:14px 16px;
+  border-bottom:1px solid #eef0f2;
+}
+
+.exhibitorsTable tbody td{
+  padding:14px 16px;
+  border-bottom:1px solid #f1f3f5;
+  font-size:13px;
+  color:#0f172a;
+}
+
+.exhibitorsRow:hover td{
+  background:#fafafa;
+  cursor:pointer;
+}
+
+.exhibitorName{
+  font-weight:800;
+}
+
+.exhibitorId{
+  font-size:12px;
+  opacity:.7;
+  margin-top:4px;
+}
+
+
+.exhibitorContact{
+  font-size:12px;
+  opacity:.8;
+}
+
+.statusPill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:22px;
+  padding:0 10px;
+  border-radius:999px;
+  font-size:11px;
+  font-weight:800;
+}
+
+.statusPill.active{
+  background:#dcfce7;
+  color:#166534;
+}
+
+.statusPill.inactive{
+  background:#e5e7eb;
+  color:#475569;
+}
+
+
+.modalOverlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.45);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+
+.modalBox{
+  background:white;
+  padding:30px;
+  border-radius:14px;
+  width:700px;
+  max-height:80vh;
+  overflow-y:auto;
+}
+
+.modalGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:20px;
+}
+
+.closeBtn{
+  margin-top:20px;
+  padding:8px 16px;
+  border-radius:10px;
+  border:none;
+  background:#133250;
+  color:white;
+  cursor:pointer;
+}
+
+
+.modalOverlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+
+.modalBox{
+  background:white;
+  padding:30px;
+  border-radius:14px;
+  width:600px;
+  max-height:80vh;
+  overflow-y:auto;
+  box-shadow:0 30px 60px rgba(0,0,0,0.15);
+}
+
+.modalBox h2{
+  margin-bottom:20px;
+}
+
+.modalGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin-top:10px;
+}
+
+
+.modalLabel{
+  font-size:12px;
+  color:#6b7280;
+  margin-bottom:3px;
+}
+
+.modalValue{
+  font-weight:600;
+  color:#0f172a;
+}
+
+
+.modalFooter{
+  display:flex;
+  justify-content:flex-end;
+  margin-top:24px;
+}
+
+.closeBtn{
+  padding:8px 18px;
+  border-radius:10px;
+  border:none;
+  background:#133250;
+  color:white;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.closeBtn:hover{
+  background:#0f253d;
+}
+
+.exhibitorsFiltersRow .filterPill,
+.exhibitorsControlsBottomRow .filterPill {
+  color: #64748b;
+}
+
+.exhibitorsFiltersRow .pillLeftIcon {
+  width: 18px;
+  height: 12px;
+  flex: 0 0 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #E8486F;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.exhibitorsFiltersRow .pillSearch {
+  overflow: hidden;
+}
+
+.exhibitorsFiltersRow .multiSelectSummary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.exhibitorsCountTop,
+.boothsCountTop {
+  margin-left: auto;
+  width: fit-content;
+  text-align: right;
+}
+
+.exhibitorsHeaderRow{
+  display:flex;
+  width:100%;
+  align-items:flex-start;
+  gap:16px;
+}
+
+.exhibitorsHeaderRight{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  width:100%;
+}

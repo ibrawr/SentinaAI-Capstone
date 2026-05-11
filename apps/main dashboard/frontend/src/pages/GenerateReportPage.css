@@ -1,0 +1,512 @@
+.generateReportPage {
+  min-width: 0;
+}
+
+.generateReportShell {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.generateReportHeaderRow h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+  color: #102a43;
+}
+
+.generateReportHeaderRow p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.generateReportError {
+  border-radius: 14px;
+  border: 1px solid #fecaca;
+  background: #fff1f2;
+  color: #b91c1c;
+  padding: 12px 14px;
+  font-size: 14px;
+}
+
+.generateReportCard {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+  padding: 22px;
+}
+
+.generateReportGrid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 0.95fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.generateReportMiddleColumn {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.generateReportSection {
+  min-width: 0;
+}
+
+.generateReportSection h3 {
+  margin: 0 0 18px;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--report-accent, #35005c);
+}
+
+.reportField,
+.reportFieldRow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.reportFieldRow.twoCols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.reportField span {
+  font-size: 12px;
+  font-weight: 800;
+  color: #334155;
+}
+
+.reportField input,
+.reportField select,
+.reportField textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: #f8fafc;
+  font-size: 14px;
+  color: #0f172a;
+  padding: 11px 12px;
+  outline: none;
+  transition: border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.reportField input:focus,
+.reportField select:focus,
+.reportField textarea:focus {
+  border-color: var(--report-accent, #35005c);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--report-accent, #35005c) 14%, white);
+}
+
+.reportField textarea {
+  min-height: 400px;
+}
+
+
+.multiSelectCard {
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+.multiSelectCard.isDisabled {
+  opacity: 0.72;
+}
+
+.multiSelectToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e2e8f0;
+  background: #ffffff;
+}
+
+.multiSelectSummary {
+  font-size: 12px;
+  color: #475569;
+}
+
+.multiSelectSummary strong {
+  color: #0f172a;
+}
+
+.multiSelectToolbarActions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.multiSelectActionBtn {
+  border: 0;
+  background: transparent;
+  color: var(--report-accent, #35005c);
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 0;
+}
+
+.multiSelectActionBtn:disabled {
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.multiSelectHelper {
+  margin: 0;
+  padding: 10px 12px 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.multiSelectList {
+  max-height: 240px;
+  overflow-y: auto;
+  padding: 10px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.multiSelectOption {
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 10px 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.16s ease, background 0.16s ease, box-shadow 0.16s ease;
+}
+
+.multiSelectOption:hover {
+  border-color: var(--report-accent, #35005c);
+}
+
+.multiSelectOption.isSelected {
+  border-color: var(--report-accent, #35005c);
+  background: color-mix(in srgb, var(--report-accent, #35005c) 7%, white);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--report-accent, #35005c) 10%, white);
+}
+
+.multiSelectOption:disabled {
+  cursor: not-allowed;
+}
+
+.multiSelectCheckbox {
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  border: 1px solid #cbd5e1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 900;
+  color: #ffffff;
+  background: #ffffff;
+  margin-top: 1px;
+}
+
+.multiSelectCheckbox.isChecked {
+  border-color: var(--report-accent, #35005c);
+  background: var(--report-accent, #35005c);
+}
+
+.multiSelectTextWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.multiSelectPrimary {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.multiSelectSecondary {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.multiSelectEmpty {
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 16px 12px;
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.sectionToggleList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionToggleItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #edf2f7;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.switchButton {
+  width: 46px;
+  height: 26px;
+  border: 0;
+  border-radius: 999px;
+  background: #cbd5e1;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.16s ease;
+}
+
+.switchButton.isOn {
+  background: var(--report-accent, #35005c);
+}
+
+.switchThumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.16s ease;
+}
+
+.switchButton.isOn .switchThumb {
+  transform: translateX(20px);
+}
+
+.aggregationField {
+  margin-bottom: 0;
+}
+
+.radioGroup,
+.formatChoices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+}
+
+.radioItem,
+.checkItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.generateReportActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #edf2f7;
+}
+
+.actionBtn {
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  padding: 0 18px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.actionBtn.ghost {
+  background: #f3f4f6;
+  color: #64748b;
+}
+
+.actionBtn.secondary {
+  background: #17324d;
+  color: #fff;
+}
+
+.actionBtn.primary {
+  background: var(--report-accent, #35005c);
+  color: #fff;
+}
+
+.actionBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1100px) {
+  .generateReportGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .generateReportMiddleColumn {
+    gap: 18px;
+  }
+}
+
+.radioGroupVertical {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.exhibitorReportPage .commentsTextarea {
+  min-height: 260px;
+}
+
+.exhibitorReportPage .generateReportGrid {
+  grid-template-columns: 1.08fr 1fr 0.82fr;
+  gap: 30px;
+}
+
+.exhibitorReportPage .generateReportGrid > .generateReportSection:first-child .reportField,
+.exhibitorReportPage .generateReportGrid > .generateReportSection:first-child .reportFieldRow {
+  margin-bottom: 14px;
+}
+
+.exhibitorReportPage .generateReportGrid > .generateReportSection:first-child .reportField input,
+.exhibitorReportPage .generateReportGrid > .generateReportSection:first-child .reportField select {
+  min-height: 44px;
+  padding: 9px 12px;
+  font-size: 13px;
+  border-radius: 11px;
+}
+
+.exhibitorReportPage .generateReportGrid > .generateReportSection:first-child .reportField span {
+  font-size: 11px;
+}
+
+.exhibitorReportPage .commentsTextarea {
+  max-width: 100%;
+  min-height: 320px;
+}
+
+.exhibitorReportPage .generateReportGrid > .generateReportSection:last-child .reportField textarea {
+  width: 100%;
+  max-width: 360px;
+}
+
+@media (max-width: 1100px) {
+  .exhibitorReportPage .generateReportGrid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .exhibitorReportPage .generateReportGrid > .generateReportSection:last-child .reportField textarea {
+    max-width: 100%;
+  }
+}
+
+.operationsReportPage .generateReportGrid {
+  gap: 32px;
+}
+
+.operationsReportPage .generateReportCard {
+  --report-accent: #E8486F;
+}
+
+.operationsReportPage .generateReportSection h3,
+.operationsReportPage .generateReportSectionTitle{
+  color: #E8486F;
+}
+
+.operationsReportPage .switchButton.isOn {
+  background: #E8486F;
+  border-color: #E8486F;
+}
+
+.operationsReportPage input[type="radio"],
+.operationsReportPage input[type="checkbox"] {
+  accent-color: #E8486F;
+}
+
+.operationsReportPage .actionBtn.primary {
+  background: #E8486F;
+  border-color: #E8486F;
+}
+
+.operationsReportPage .actionBtn.primary:hover {
+  background: #d93f66;
+  border-color: #d93f66;
+}
+
+.operationsReportPage .reportField input:focus,
+.operationsReportPage .reportField select:focus,
+.operationsReportPage .reportField textarea:focus {
+  border-color: #E8486F;
+  box-shadow: 0 0 0 3px rgba(232, 72, 111, 0.12);
+}
+
+@media (max-width: 1100px) {
+  .operationsReportPage .generateReportGrid {
+    gap: 24px;
+  }
+}
+
+.exhibitorReportPage .generateReportGrid {
+  grid-template-columns: 1.08fr 1fr 0.82fr;
+  gap: 30px;
+}
+
+.exhibitorReportPage .generateReportGrid > .generateReportSection:first-child .reportField,
+.exhibitorReportPage .generateReportGrid > .generateReportSection:first-child .reportFieldRow {
+  margin-bottom: 14px;
+}
+
+.exhibitorReportPage .generateReportGrid > .generateReportSection:first-child .reportField input,
+.exhibitorReportPage .generateReportGrid > .generateReportSection:first-child .reportField select {
+  min-height: 44px;
+  padding: 9px 12px;
+  font-size: 13px;
+  border-radius: 11px;
+}
+
+.exhibitorReportPage .generateReportGrid > .generateReportSection:first-child .reportField span {
+  font-size: 11px;
+}
+
+.exhibitorReportPage .commentsTextarea {
+  max-width: 100%;
+  min-height: 320px;
+}
+
+.exhibitorReportPage .generateReportGrid > .generateReportSection:last-child .reportField textarea {
+  width: 100%;
+  max-width: 360px;
+}
+
+@media (max-width: 1100px) {
+  .exhibitorReportPage .generateReportGrid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .exhibitorReportPage .generateReportGrid > .generateReportSection:last-child .reportField textarea {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,533 @@
+.opsTheme .devicesPage,
+.devicesPage{
+  background: #f5f6f8;
+  min-height: 100%;
+}
+
+.opsTheme .devicesPage .pageInner,
+.devicesPage .pageInner{
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  padding: 22px 26px;
+}
+
+.opsTheme .devicesHeaderRow,
+.devicesHeaderRow{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.opsTheme .devicesTitle,
+.devicesTitle{
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.1;
+  color: #0f172a;
+}
+
+.opsTheme .devicesSubtitle,
+.devicesSubtitle{
+  margin-top: 6px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.opsTheme .devicesHeaderRight,
+.devicesHeaderRight{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.opsTheme .devicesCountTop,
+.devicesCountTop{
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.opsTheme .devicesControlsCard,
+.devicesControlsCard{
+  margin-top: 14px;
+  background: #ffffff;
+  border: 1px solid #eef0f2;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.opsTheme .devicesFiltersRow,
+.devicesFiltersRow{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 1100px){
+  .opsTheme .devicesFiltersRow,
+  .devicesFiltersRow{
+    flex-wrap: wrap;
+  }
+}
+
+
+
+.opsTheme .devicesFiltersRow .filterPill,
+.devicesFiltersRow .filterPill{
+  height: 30px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  color: #64748b;
+  border: 1px solid #d2d7dc;
+  padding: 0 12px 1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.55),
+    0 1px 0 rgba(15,23,42,0.04);
+}
+
+.opsTheme .pillZone, .pillZone{ width: 150px; }
+.opsTheme .pillHall, .pillHall{ width: 150px; }
+.opsTheme .pillDeviceType, .pillDeviceType{ width: 165px; }
+.opsTheme .pillStatus, .pillStatus{ width: 150px; }
+.opsTheme .pillSort, .pillSort{ width: 185px; }
+.opsTheme .pillRows, .pillRows{ width: 60px; }
+
+.opsTheme .pillSearch, .pillSearch{
+  width: 300px;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.opsTheme .devicesFiltersRow .pillLeftIcon,
+.sustTheme .devicesFiltersRow .pillLeftIcon,
+.devicesFiltersRow .pillLeftIcon{
+  width: 18px;
+  height: 12px;
+  flex: 0 0 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.85;
+}
+
+.opsTheme .devicesFiltersRow .pillLeftIcon{ color: #E8486F; }
+.sustTheme .devicesFiltersRow .pillLeftIcon{ color: #00802B; }
+.devicesFiltersRow .pillLeftIcon{ color: #64748b; }
+
+.opsTheme .devicesFiltersRow .pillSelect,
+.devicesFiltersRow .pillSelect{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: inherit;
+  color: inherit;
+  -webkit-text-fill-color: currentColor;
+}
+
+.opsTheme .devicesFiltersRow .pillInput,
+.devicesFiltersRow .pillInput{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: inherit;
+  color: inherit;
+  -webkit-text-fill-color: currentColor;
+}
+
+.opsTheme .devicesFiltersRow .pillInput::placeholder,
+.devicesFiltersRow .pillInput::placeholder{
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 1;
+  opacity: 1;
+}
+
+.opsTheme .devicesFiltersRow .pillSearchIcon,
+.devicesFiltersRow .pillSearchIcon{
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  line-height: 0;
+  background: #133250;
+  color: #0f172a;
+  opacity: 0.85;
+}
+
+.opsTheme .devicesFiltersRow .pillSearchIcon svg,
+.devicesFiltersRow .pillSearchIcon svg{
+  width: 15px;
+  height: 16px;
+  display: block;
+}
+
+.opsTheme .devicesFiltersRow .filterPill:hover,
+.devicesFiltersRow .filterPill:hover{
+  background: #d4d8db;
+}
+
+.opsTheme .devicesFiltersRow .filterPill:focus-within,
+.devicesFiltersRow .filterPill:focus-within{
+  overflow: visible;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.55),
+    0 0 0 3px rgba(15,23,42,0.08);
+}
+
+.opsTheme .devicesControlsBottomRow,
+.devicesControlsBottomRow{
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.opsTheme .clearFiltersBtn,
+.clearFiltersBtn{
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.opsTheme .clearFiltersBtn:hover,
+.clearFiltersBtn:hover{
+  background: #f8fafc;
+}
+
+.opsTheme .rowsControl,
+.rowsControl{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.opsTheme .rowsLabel,
+.rowsLabel{
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.opsTheme .devicesError,
+.devicesError{
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 14px;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+}
+
+.opsTheme .devicesErrorTitle,
+.devicesErrorTitle{
+  font-weight: 800;
+  color: #7f1d1d;
+  margin-bottom: 6px;
+}
+
+.opsTheme .devicesErrorBody,
+.devicesErrorBody{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+  color: #7f1d1d;
+}
+
+.opsTheme .devicesTableCard,
+.devicesTableCard{
+  margin-top: 14px;
+  background: #ffffff;
+  border: 1px solid #eef0f2;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+.opsTheme .devicesTableScroll,
+.devicesTableScroll{
+  overflow-x: auto;
+}
+
+.opsTheme .devicesTable,
+.devicesTable{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.opsTheme .devicesTable thead th,
+.devicesTable thead th{
+  background: #fbfbfc;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid #eef0f2;
+  white-space: nowrap;
+}
+
+.opsTheme .devicesTable tbody td,
+.devicesTable tbody td{
+  padding: 14px 16px;
+  border-bottom: 1px solid #f1f3f5;
+  font-size: 13px;
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+.opsTheme .devicesTable tbody tr:hover td,
+.devicesTable tbody tr:hover td{
+  background: #fafafa;
+}
+
+.opsTheme .tdStrong, .tdStrong{ font-weight: 800; }
+
+.opsTheme .tdMono,
+.tdMono{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+  color: #334155;
+}
+
+.opsTheme .statusPill,
+.statusPill{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.opsTheme .statusPill.isActive, .statusPill.isActive{ background: #dcfce7; color: #166534; }
+.opsTheme .statusPill.isInactive, .statusPill.isInactive{ background: #f3f4f6; color: #475569; }
+.opsTheme .statusPill.isOffline, .statusPill.isOffline{ background: #eceef1; color: #475569; }
+.opsTheme .statusPill.isQuarantined, .statusPill.isQuarantined{ background: #fee2e2; color: #991b1b; }
+.opsTheme .statusPill.isNeedsAttention, .statusPill.isNeedsAttention{ background: #fef9c3; color: #854d0e; }
+.opsTheme .statusPill.isNeutral, .statusPill.isNeutral{ background: #e5e7eb; color: #475569; }
+
+.opsTheme .devicesPager,
+.devicesPager{
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.opsTheme .devicesPagerLeft,
+.devicesPagerLeft{
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.opsTheme .devicesPagerRight,
+.devicesPagerRight{
+  display: flex;
+  gap: 8px;
+}
+
+.opsTheme .pagerBtn,
+.pagerBtn{
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.opsTheme .pagerBtn:hover,
+.pagerBtn:hover{
+  background: #f8fafc;
+}
+
+.opsTheme .pagerBtn:disabled,
+.pagerBtn:disabled{
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.opsTheme .devicesControlsCard .clearFiltersBtn{
+  background: #E8486F !important;
+  border-color: #E8486F !important;
+  color: #ffffff !important;
+}
+.opsTheme .devicesControlsCard .clearFiltersBtn:hover{
+  background: #d93f65 !important;
+  border-color: #d93f65 !important;
+}
+
+.sustTheme .devicesControlsCard .clearFiltersBtn{
+  background: #00802B !important;
+  border-color: #00802B !important;
+  color: #ffffff !important;
+}
+.sustTheme .devicesControlsCard .clearFiltersBtn:hover{
+  background: #006b24 !important;
+  border-color: #006b24 !important;
+}
+
+.opsTheme .devicesHeaderRight .devicesCountTop{
+  color: #E8486F !important;
+  font-weight: 700;
+}
+.sustTheme .devicesHeaderRight .devicesCountTop{
+  color: #00802B !important;
+  font-weight: 700;
+}
+
+.opsTheme .devicesTable thead th{ color: #E8486F !important; }
+.sustTheme .devicesTable thead th{ color: #00802B !important; }
+
+
+.opsTheme .pillSelectWrap,
+.pillSelectWrap{
+  position: relative;
+}
+
+.opsTheme .pillSelectWrap .pillSelect,
+.pillSelectWrap .pillSelect{
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 26px;
+  line-height: 30px;
+}
+
+.opsTheme .pillSelectWrap .pillRightCaret,
+.pillSelectWrap .pillRightCaret{
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-35%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #133250;
+  opacity: 0.85;
+  pointer-events: none;
+  transition: transform 160ms ease;
+  transform-origin: center;
+}
+
+.opsTheme .pillSelectWrap .pillLeftIcon,
+.pillSelectWrap .pillLeftIcon{
+  pointer-events: none;
+}
+
+.opsTheme .pillSelectWrap.isOpen .pillRightCaret,
+.pillSelectWrap.isOpen .pillRightCaret{
+  transform: translateY(-35%) rotate(180deg);
+}
+
+
+.socTheme .devicesPage{
+  background: #f5f7fb;
+  min-height: 100%;
+}
+
+.socTheme .devicesPage .pageInner{
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  padding: 22px 26px;
+}
+
+.socTheme .devicesTableCard{
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #e6ebf2;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+}
+
+.socTheme .devicesTableScroll{
+  width: 100%;
+  overflow-x: auto;
+}
+
+.socTheme .devicesTable{
+  width: 100%;
+  min-width: 1200px;
+  border-collapse: collapse;
+}
+
+.socTheme .devicesControlsCard{
+  border: 1px solid #e6ebf2;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+}
+
+.socTheme .devicesFiltersRow .pillLeftIcon{
+  color: #133250 !important;
+}
+
+.socTheme .devicesFiltersRow .pillSearchIcon{
+  background: #133250 !important;
+  color: #ffffff !important;
+}
+
+.socTheme .devicesHeaderRight .devicesCountTop{
+  color: #133250 !important;
+  font-weight: 700;
+}
+
+.socTheme .devicesTable thead th{
+  color: #133250 !important;
+}
+
+.socTheme .devicesControlsCard .clearFiltersBtn{
+  background: #133250 !important;
+  border-color: #133250 !important;
+  color: #ffffff !important;
+}
+
+.socTheme .devicesControlsCard .clearFiltersBtn:hover{
+  background: #0f2740 !important;
+  border-color: #0f2740 !important;
+}
+
+.socTheme .pillSelectWrap .pillRightCaret{
+  border-top-color: #133250 !important;
+}

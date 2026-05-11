@@ -1,0 +1,683 @@
+.settingsPage,
+.settingsModal,
+.settingsSubModal {
+  --settings-accent: #e8486f;
+  --settings-accent-soft: rgba(232, 72, 111, 0.1);
+  --settings-accent-border: rgba(232, 72, 111, 0.2);
+  --settings-ink: #0f172a;
+  --settings-muted: #6b7280;
+  --settings-line: #e5e7eb;
+  --settings-bg: #f6f7fb;
+  --settings-card: #ffffff;
+  --settings-radius: 18px;
+  --settings-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  color: var(--settings-ink);
+  font-family: var(--app-font);
+  min-width: 0;
+}
+
+.settingsSoc {
+  --settings-accent: #123150;
+  --settings-accent-soft: rgba(18, 49, 80, 0.1);
+  --settings-accent-border: rgba(18, 49, 80, 0.2);
+}
+
+.settingsSust {
+  --settings-accent: #00802b;
+  --settings-accent-soft: rgba(0, 128, 43, 0.1);
+  --settings-accent-border: rgba(0, 128, 43, 0.2);
+}
+
+.settingsExhibitor {
+  --settings-accent: #35005c;
+  --settings-accent-soft: rgba(53, 0, 92, 0.08);
+  --settings-accent-border: rgba(53, 0, 92, 0.18);
+}
+
+.settingsModalOverlay,
+.settingsSubModalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  background: rgba(15, 23, 42, 0.38);
+  backdrop-filter: blur(4px);
+}
+
+.settingsSubModalOverlay {
+  z-index: 3100;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.settingsModal {
+  width: min(1180px, calc(100vw - 56px));
+  max-height: min(88vh, 960px);
+  overflow: hidden;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: #f6f7fb;
+  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.24);
+}
+
+.settingsSubModal {
+  width: min(560px, calc(100vw - 40px));
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: #f6f7fb;
+  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.28);
+  color: var(--settings-ink);
+  font-family: var(--app-font);
+}
+
+.settingsModalTopBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px 0;
+}
+
+.settingsModalKicker {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.settingsModalClose {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  color: #111827;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 20;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+}
+
+.settingsModalClose:hover {
+  transform: translateY(-1px);
+  background: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+.settingsModalClose:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.settingsModalClose svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.settingsPage {
+  padding: 4px 20px 22px;
+  max-height: calc(88vh - 56px);
+  overflow-y: auto;
+}
+
+.settingsModal {
+  padding: 0;
+}
+
+.settingsSubModal {
+  padding: 4px 20px 22px;
+}
+
+.settingsHero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 4px 0 10px;
+}
+
+.settingsHero--modal {
+  padding-top: 6px;
+}
+
+.settingsEyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: var(--settings-accent-soft);
+  color: var(--settings-accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.settingsHero h1,
+.settingsSubModalHeader h2 {
+  margin: 14px 0 8px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.settingsSubModalHeader h2 {
+  font-size: 28px;
+}
+
+.settingsHero p,
+.settingsSubModalHeader p {
+  max-width: 740px;
+  margin: 0;
+  color: var(--settings-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.settingsHeroActions,
+.settingsSubModalActions,
+.settingsActionRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.settingsSubModalActions,
+.settingsActionRow {
+  margin-top: 14px;
+}
+
+.settingsPrimaryButton,
+.settingsGhostButton {
+  min-height: 46px;
+  padding: 0 16px;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 14px;
+  font-family: var(--app-font);
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease;
+}
+
+.settingsPrimaryButton {
+  border: 1px solid var(--settings-accent);
+  background: var(--settings-accent);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+}
+
+.settingsGhostButton {
+  border: 1px solid var(--settings-line);
+  background: #fff;
+  color: var(--settings-ink);
+}
+
+.settingsPrimaryButton:hover,
+.settingsGhostButton:hover {
+  transform: translateY(-1px);
+}
+
+.settingsPrimaryButton:disabled,
+.settingsGhostButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.settingsStatusBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 8px 0 18px;
+}
+
+.settingsStatusPill,
+.settingsSaveState,
+.settingsCardBadge,
+.settingsSecurityBadge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.settingsStatusPill,
+.settingsCardBadge {
+  background: #fff;
+  border: 1px solid var(--settings-line);
+  color: var(--settings-ink);
+}
+
+.settingsSaveState {
+  background: var(--settings-accent-soft);
+  color: var(--settings-accent);
+}
+
+.settingsSaveState--dirty {
+  background: rgba(245, 158, 11, 0.14);
+  color: #92400e;
+}
+
+.settingsSaveState--error {
+  background: rgba(239, 68, 68, 0.12);
+  color: #991b1b;
+}
+
+.settingsInlineStatus {
+  color: var(--settings-muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.settingsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.settingsGrid--top {
+  align-items: stretch;
+}
+
+.settingsCard {
+  background: var(--settings-card);
+  border: 1px solid var(--settings-line);
+  border-radius: var(--settings-radius);
+  box-shadow: var(--settings-shadow);
+  min-width: 0;
+}
+
+.settingsCardHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 20px 0;
+}
+
+.settingsCardHead h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--settings-accent);
+  letter-spacing: -0.02em;
+}
+
+.settingsCardHead p {
+  margin: 8px 0 0;
+  color: var(--settings-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.settingsCardAside {
+  display: flex;
+  align-items: center;
+}
+
+.settingsCardBody,
+.settingsSubModalBody {
+  padding: 18px 20px 20px;
+}
+
+.settingsSubModalHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 20px 0;
+}
+
+.settingsFieldsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.settingsFieldsGrid--tight {
+  grid-template-columns: 1fr;
+}
+
+.settingsField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.settingsLabel,
+.settingsMiniLabel {
+  color: var(--settings-muted);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.settingsSelect,
+.settingsReadonly,
+.settingsInput {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 46px;
+  padding: 0 14px;
+  border-radius: 14px;
+  border: 1px solid var(--settings-line);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--app-font);
+  outline: none;
+}
+
+.settingsCloseGlyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  color: #6b7280;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1;
+  font-family: Inter, "Studio Display", var(--app-font), sans-serif;
+}
+
+.settingsPasswordInputWrap {
+  position: relative;
+}
+
+.settingsInput--withAction {
+  padding-right: 84px;
+}
+
+.settingsPasswordToggle {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: var(--settings-accent);
+  font-family: var(--app-font);
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+.settingsPasswordToggle:hover {
+  opacity: 0.82;
+}
+
+.settingsPasswordToggle:focus-visible {
+  outline: 2px solid var(--settings-accent-border);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+.settingsSelect,
+.settingsInput {
+  background: #fff;
+  color: var(--settings-ink);
+}
+
+.settingsReadonly {
+  display: flex;
+  align-items: center;
+  background: #f3f4f6;
+  color: #6b7280;
+  border-color: #d1d5db;
+  cursor: default;
+  user-select: text;
+}
+
+.settingsSelect:focus,
+.settingsInput:focus {
+  border-color: var(--settings-accent-border);
+  box-shadow: 0 0 0 4px var(--settings-accent-soft);
+}
+
+.settingsHint {
+  color: var(--settings-muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.settingsToggleStack {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.settingsToggleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 14px 14px 16px;
+  border: 1px solid var(--settings-line);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.settingsToggleLabel {
+  display: inline-block;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.settingsToggleDescription {
+  margin: 6px 0 0;
+  color: var(--settings-muted);
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 560px;
+}
+
+.settingsToggle {
+  position: relative;
+  width: 52px;
+  height: 30px;
+  border: 0;
+  border-radius: 999px;
+  background: #cbd5e1;
+  padding: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.18s ease;
+}
+
+.settingsToggle.isOn {
+  background: var(--settings-accent);
+}
+
+.settingsToggleKnob {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.2);
+  transition: transform 0.18s ease;
+}
+
+.settingsToggle.isOn .settingsToggleKnob {
+  transform: translateX(22px);
+}
+
+.settingsSecuritySummary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.settingsSecuritySummary>div,
+.settingsPasswordRules {
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+}
+
+
+.settingsTopLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 18px;
+  margin-bottom: 18px;
+  align-items: stretch;
+}
+
+.settingsLeftColumn,
+.settingsRightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+
+.settingsRightColumn .settingsCard {
+  flex: 1;
+}
+
+.settingsSecuritySummary strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #6b7280;
+}
+
+.settingsPasswordRules {
+  margin-top: 16px;
+}
+
+.settingsPasswordRules ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.settingsPasswordMessage {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.settingsPasswordMessage--error {
+  background: rgba(239, 68, 68, 0.1);
+  color: #991b1b;
+  border: 1px solid rgba(239, 68, 68, 0.18);
+}
+
+.settingsPasswordMessage--success {
+  background: rgba(16, 185, 129, 0.12);
+  color: #065f46;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.settingsPasswordMessage--submitting {
+  background: rgba(59, 130, 246, 0.1);
+  color: #1d4ed8;
+  border: 1px solid rgba(59, 130, 246, 0.18);
+}
+
+@media (max-width: 1120px) {
+
+
+  .settingsTopLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .settingsGrid,
+  .settingsGrid--top {
+    grid-template-columns: 1fr;
+  }
+
+  .settingsFieldsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+
+  .settingsModalOverlay,
+  .settingsSubModalOverlay {
+    padding: 16px;
+  }
+
+  .settingsModal {
+    width: 100%;
+    max-height: calc(100vh - 32px);
+    border-radius: 22px;
+    padding: 0;
+  }
+
+  .settingsSubModal {
+    width: 100%;
+    border-radius: 22px;
+    padding: 4px 14px 18px;
+  }
+
+  .settingsPage {
+    padding: 4px 14px 18px;
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+  }
+
+  .settingsHero,
+  .settingsSubModalHeader {
+    flex-direction: column;
+  }
+
+  .settingsHeroActions,
+  .settingsSubModalActions {
+    width: 100%;
+  }
+
+  .settingsPrimaryButton,
+  .settingsGhostButton {
+    flex: 1 1 180px;
+  }
+
+  .settingsToggleRow {
+    flex-direction: column;
+  }
+
+  .settingsSecuritySummary {
+    grid-template-columns: 1fr;
+  }
+}

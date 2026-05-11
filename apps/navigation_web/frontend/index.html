@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/static/favicon.png" />
+    <title>Convention Center Navigation - IoT Crowd-Aware Routing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #111111 0%, #2a2a2a 100%);
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        #app {
+            display: flex;
+            height: 100vh;
+        }
+
+        #canvas-container {
+            flex: 1;
+            position: relative;
+            background: #1a1a1a;
+        }
+
+        #pixiCanvas {
+            max-width: 100%;
+            max-height: 100%;
+            width: 1600px;
+            height: 900px;
+            display: block;
+            object-fit: contain;
+        }
+
+        #controls-panel {
+            width: 380px;
+            background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: -5px 0 25px rgba(0, 0, 0, 0.8);
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 15px 0 8px;
+            color: #dddddd;
+            border-bottom: 2px solid #555555;
+            padding-bottom: 4px;
+        }
+
+        .control-group {
+            margin-bottom: 18px;
+            background: rgba(255, 255, 255, 0.07);
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 3px solid #bbbbbb;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #eeeeee;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        select, button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        select {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            cursor: pointer;
+        }
+
+        button {
+            background: linear-gradient(135deg, #888888 0%, #555555 100%);
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 14px rgba(255, 255, 255, 0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        /* NEW: IoT Panel Styles */
+        #iot-panel {
+            background: rgba(255, 255, 255, 0.07);
+            border-left: 3px solid #bbbbbb;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 18px;
+            font-size: 13px;
+        }
+
+        #iot-panel h2 {
+            color: #dddddd;
+            border-color: #555555;
+        }
+
+        .iot-stat {
+            display: flex;
+            justify-content: space-between;
+            margin: 6px 0;
+            padding: 4px 0;
+        }
+
+        .iot-stat-label {
+            color: #eeeeee;
+        }
+
+        .iot-stat-value {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        #crowded-halls {
+            list-style: none;
+            padding: 0;
+            margin-top: 8px;
+        }
+
+        #crowded-halls li {
+            padding: 4px 0;
+            font-size: 12px;
+        }
+
+        /* Toggle Switch */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 8px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+        }
+
+        .toggle-label {
+            font-size: 13px;
+            color: #b3e0ff;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 50px;
+            height: 24px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #555;
+            transition: 0.3s;
+            border-radius: 24px;
+        }
+
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: 0.3s;
+            border-radius: 50%;
+        }
+
+        input:checked + .toggle-slider {
+            background-color: #aaaaaa;
+        }
+
+        input:checked + .toggle-slider:before {
+            transform: translateX(26px);
+        }
+
+        #path-info {
+            background: rgba(255, 255, 255, 0.07);
+            border-left: 3px solid #bbbbbb;
+            padding: 12px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        #path-info.visible {
+            display: block;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .distance-display {
+            font-size: 26px;
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+            margin: 8px 0;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .path-steps {
+            max-height: 180px;
+            overflow-y: auto;
+            margin-top: 8px;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .path-step {
+            padding: 6px;
+            margin: 4px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            border-left: 2px solid #bbbbbb;
+        }
+
+        .legend {
+            margin-top: 15px;
+            font-size: 11px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 6px 0;
+        }
+
+        .legend-color {
+            width: 18px;
+            height: 18px;
+            border-radius: 3px;
+            margin-right: 8px;
+        }
+
+        #status {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .loading {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #ffffff;
+            animation: spin 1s linear infinite;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .controls-buttons {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 100;
+        }
+
+        .control-btn {
+            width: 38px;
+            height: 38px;
+            margin-left: 8px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            transition: all 0.2s;
+            font-size: 18px;
+        }
+
+        .control-btn:hover {
+            background: rgba(220, 220, 220, 0.5);
+            transform: scale(1.1);
+        }
+
+        #event-tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.92);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            pointer-events: none;
+            z-index: 1000;
+            min-width: 180px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            display: none;
+            font-size: 12px;
+        }
+
+        #event-tooltip.visible {
+            display: block;
+        }
+
+        #event-tooltip h3 {
+            color: #ffffff;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        #event-tooltip p {
+            margin: 4px 0;
+            font-size: 12px;
+            color: #eeeeee;
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 4px 0;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div id="canvas-container">
+            <canvas id="pixiCanvas"></canvas>
+            
+            <div id="status">
+                <div class="loading"></div>
+                <span id="status-text">Initializing...</span>
+            </div>
+
+            <div class="controls-buttons">
+                <button class="control-btn" id="zoomIn" title="Zoom In">+</button>
+                <button class="control-btn" id="zoomOut" title="Zoom Out">−</button>
+                <button class="control-btn" id="resetView" title="Reset View">⟲</button>
+            </div>
+
+            <div id="event-tooltip">
+                <h3 id="tooltip-title"></h3>
+                <p id="tooltip-content"></p>
+            </div>
+        </div>
+
+        <div id="controls-panel">
+            <h1>NavMesh Navigation</h1>
+            <p style="font-size: 11px; opacity: 0.8; margin-bottom: 15px;">
+                Real-time crowd-aware pathfinding
+            </p>
+
+            <!-- NEW: IoT Telemetry Panel -->
+            <div id="iot-panel">
+                <h2>Live Telemetry</h2>
+                <div class="iot-stat">
+                    <span class="iot-stat-label">Status:</span>
+                    <span class="iot-stat-value" id="iot-status">Loading...</span>
+                </div>
+                <div class="iot-stat">
+                    <span class="iot-stat-label">Avg Occupancy:</span>
+                    <span class="iot-stat-value" id="avg-occupancy">--</span>
+                </div>
+                <div class="iot-stat">
+                    <span class="iot-stat-label">Peak Occupancy:</span>
+                    <span class="iot-stat-value" id="max-occupancy">--</span>
+                </div>
+                <div style="margin-top: 10px;">
+                    <strong style="font-size: 12px; color: #ffffff;">Crowded Halls:</strong>
+                    <ul id="crowded-halls"></ul>
+
+                <div class="toggle-container">
+                    <span class="toggle-label">Show Heatmap</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="heatmapToggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+
+                <div class="toggle-container">
+                    <span class="toggle-label">Demo Congestion</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="demoToggle" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div style="font-size: 11px; opacity: 0.75; margin-top: -6px;">
+                    Simulated hotspots for demo visuals.
+                </div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h2>Plan Route</h2>
+                
+                <!-- NEW: Crowd Avoidance Toggle -->
+                <div class="toggle-container">
+                    <span class="toggle-label">Avoid Crowded Areas</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="crowdToggle" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                
+                <label for="startRoom">Start Location:</label>
+                <select id="startRoom">
+                    <option value="">Select starting hall...</option>
+                </select>
+
+                <label for="endRoom">Destination:</label>
+                <select id="endRoom">
+                    <option value="">Select destination...</option>
+                </select>
+
+                <button id="findPath">Find Optimal Path</button>
+                <button id="clearPath" style="background: linear-gradient(135deg, #999999 0%, #555555 100%);">
+                    Clear Path
+                </button>
+            </div>
+
+            <div id="path-info">
+                <h2>Route Information</h2>
+                <div class="distance-display">
+                    <span id="distance-meters">0</span> meters
+                </div>
+                <p style="text-align: center; font-size: 11px; opacity: 0.8;">
+                    <span id="distance-pixels">0</span> pixels
+                </p>
+                <div class="path-steps" id="pathSteps"></div>
+            </div>
+
+            <div class="control-group">
+                <h2>System Info</h2>
+                <div class="stat-row">
+                    <span>Nodes:</span>
+                    <span id="node-count">0</span>
+                </div>
+                <div class="stat-row">
+                    <span>Edges:</span>
+                    <span id="edge-count">0</span>
+                </div>
+                <div class="stat-row">
+                    <span>Rooms:</span>
+                    <span id="room-count">0</span>
+                </div>
+            </div>
+
+            <div class="legend">
+                <h2>Map Legend</h2>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: rgba(239, 239, 239, 0.6);"></div>
+                    <span>Halls/Rooms</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: rgba(158, 42, 43, 0.4);"></div>
+                    <span>Walkable Corridors</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #4caf50;"></div>
+                    <span>Low Occupancy</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ffa500;"></div>
+                    <span>Moderate Occupancy</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ff6b6b;"></div>
+                    <span>High Occupancy</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #00d4ff;"></div>
+                    <span>Selected Path</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.3.2/pixi.min.js"></script>
+    <script src="/static/app.js?v=20260201000000" defer></script>
+</body>
+</html>

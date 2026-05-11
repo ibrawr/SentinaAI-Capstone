@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Senti Assistant Guide</title>
+  <style>
+    body{font-family:Arial,sans-serif;background:#f5f7fb;color:#16324f;max-width:900px;margin:0 auto;padding:40px 24px;line-height:1.65}
+    .badge{display:inline-block;background:#e9eeff;color:#3659d9;padding:8px 12px;border-radius:999px;font-weight:700;font-size:13px}
+    h1{margin:18px 0 12px} h2{margin-top:30px} code{background:#eef2f8;padding:2px 6px;border-radius:6px}
+    .card{background:#fff;border:1px solid #e5eaf3;border-radius:18px;padding:18px 20px;margin-top:18px}
+  </style>
+</head>
+<body>
+  <div class="badge">SentinaAI Assistant Guide</div>
+  <h1>Senti role-based widget</h1>
+  <p>This widget supports operations, sustainability, and exhibitor flows inside the same shell. The launcher label, assistant title, actions, and analytics flow all change by role.</p>
+
+  <div class="card">
+    <h2>Roles</h2>
+    <ul>
+      <li><strong>Senti Operations</strong>: venue operations monitoring and drill-downs</li>
+      <li><strong>Senti Sustainability</strong>: energy, comfort, efficiency, and by-event analysis</li>
+      <li><strong>Senti Exhibitor</strong>: assignment-based booth analytics and exhibitor comparisons</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Exhibitor rules</h2>
+    <ul>
+      <li>scope is assignment-based</li>
+      <li>date range is locked to the event window</li>
+      <li>comparison is intentional and event-aware</li>
+      <li>comparison is not repeated as a follow-up on every result card</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Sustainability by event overview</h2>
+    <p><code>By Event Overview</code> computes event-level metrics from the dataset and event mapping file. It can show energy, carbon, occupancy, flow, queue share, overcrowded share, and top-event rankings for the selected range.</p>
+  </div>
+
+  <div class="card">
+    <h2>Saved views</h2>
+    <p>Saved views preserve the request filters and the rendered result snapshot used in the prototype.</p>
+  </div>
+
+  <div class="card">
+    <h2>Prototype notes</h2>
+    <p>This package uses local CSV data and a FastAPI backend for the prototype. It is structured so the frontend team can later replace the CSV layer with the real backend API and database architecture.</p>
+  </div>
+</body>
+</html>

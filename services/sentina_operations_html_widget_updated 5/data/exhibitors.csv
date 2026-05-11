@@ -1,0 +1,251 @@
+exhibitorId,exhibitorName,industry,hqCountry,contactName,contactEmail,contactPhone,status,createdAt,updatedAt
+EXH0001,Helio Automation Ltd,HealthTech,Saudi Arabia,Tariq Wong,tariq.wong@helioautomation.com,'+971564941508,active,2025-12-12T11:00:00+00:00,2025-12-19T08:17:47+00:00
+EXH0002,Stratus Platforms GmbH,HealthTech,Germany,Hana Nasser,hana.nasser@stratusplatforms.com,'+971524254390,active,2025-12-02T08:00:00+00:00,2025-12-21T09:05:56+00:00
+EXH0003,Pulse Security LLC,AI,UK,Sara Weber,sara.weber@pulsesecurity.com,'+971557520333,active,2025-11-01T11:00:00+00:00,2025-11-27T19:55:08+00:00
+EXH0004,Lumina Networks PLC,AI,UAE,Huda Garcia,huda.garcia@luminanetworks.com,'+971522417709,active,2025-11-17T08:00:00+00:00,2025-12-12T12:31:43+00:00
+EXH0005,CloudNine Networks FZ-LLC,Smart Buildings,Germany,Rana Taylor,rana.taylor@cloudninenetworks.com,'+971546978432,active,2025-10-26T11:00:00+00:00,2025-11-09T07:15:59+00:00
+EXH0006,RedStone Engineering PLC,Cloud,UAE,Aisha Singh,aisha.singh@redstoneengineering.com,'+971522382416,active,2025-12-11T10:00:00+00:00,2025-12-19T17:28:23+00:00
+EXH0007,Skyline Systems FZ-LLC,Cloud,Germany,Yousef Patel,yousef.patel@skylinesystems.com,'+971563347362,active,2025-12-03T10:00:00+00:00,2026-01-13T01:07:34+00:00
+EXH0008,Nexa Digital Inc,Cloud,Singapore,Nadia Brown,nadia.brown@nexadigital.com,'+971566560099,active,2025-12-01T11:00:00+00:00,2025-12-04T02:11:38+00:00
+EXH0009,Kairo Engineering Inc,Energy,Egypt,Samir El-Sayed,samir.elsayed@kairoengineering.com,'+971505247470,active,2025-12-09T10:00:00+00:00,2026-01-02T21:24:59+00:00
+EXH0010,Nimbus Security GmbH,HealthTech,Germany,Bilal Wong,bilal.wong@nimbussecurity.com,'+971527936958,active,2025-12-04T10:00:00+00:00,2025-12-09T18:04:46+00:00
+EXH0011,Orion Automation Ltd,Energy,Egypt,Yousef Garcia,yousef.garcia@orionautomation.com,'+971552567783,active,2025-11-14T11:00:00+00:00,2025-12-29T06:57:07+00:00
+EXH0012,Aurora Solutions GmbH,Telecom,France,Faisal Brown,faisal.brown@aurorasolutions.com,'+971562519857,active,2025-11-15T10:00:00+00:00,2025-12-13T04:28:47+00:00
+EXH0013,Stratus Services S.A.,Cybersecurity,UK,Yousef Taylor,yousef.taylor@stratusservices.com,'+971545779714,active,2025-12-02T11:00:00+00:00,2025-12-11T17:04:47+00:00
+EXH0014,Quant Technologies GmbH,Smart Buildings,Qatar,Samir Nasser,samir.nasser@quanttechnologies.com,'+971505376525,active,2025-12-16T08:00:00+00:00,2025-12-19T13:41:43+00:00
+EXH0015,Quant Dynamics PLC,AI,France,Amir Chen,amir.chen@quantdynamics.com,'+971543164912,active,2025-11-23T11:00:00+00:00,2025-12-07T10:03:36+00:00
+EXH0016,Nimbus Intelligence Inc,Cloud,Qatar,Bilal Hassan,bilal.hassan@nimbusintelligence.com,'+971505221045,active,2025-12-11T11:00:00+00:00,2025-12-24T19:48:01+00:00
+EXH0017,Saffron Services FZ-LLC,AI,Singapore,Rami Weber,rami.weber@saffronservices.com,'+971567476822,active,2025-12-14T11:00:00+00:00,2025-12-26T03:34:28+00:00
+EXH0018,Kairo Intelligence S.A.,IoT,India,Aya Ibrahim,aya.ibrahim@kairointelligence.com,'+971508706060,active,2025-11-22T11:00:00+00:00,2025-12-07T22:21:58+00:00
+EXH0019,BluePeak Digital Ltd,Robotics,France,Adam Nasser,adam.nasser@bluepeakdigital.com,'+971559369394,active,2025-11-02T11:00:00+00:00,2025-12-11T23:30:51+00:00
+EXH0020,RedStone Intelligence Ltd,Robotics,Singapore,Noura Ibrahim,noura.ibrahim@redstoneintelligence.com,'+971525551860,active,2025-11-09T10:00:00+00:00,2025-11-29T20:51:57+00:00
+EXH0021,Vertex Intelligence GmbH,Smart Buildings,UK,Hana Yilmaz,hana.yilmaz@vertexintelligence.com,'+971554147085,active,2025-12-06T08:00:00+00:00,2025-12-16T03:30:38+00:00
+EXH0022,Orion Security FZ-LLC,Cybersecurity,France,Sofia Garcia,sofia.garcia@orionsecurity.com,'+971529052190,active,2025-11-17T11:00:00+00:00,2025-11-30T05:57:34+00:00
+EXH0023,Stratus Labs GmbH,FinTech,Singapore,Hassan Khan,hassan.khan@stratuslabs.com,'+971503544203,active,2025-12-09T12:00:00+00:00,2025-12-14T11:22:39+00:00
+EXH0024,Pulse Security Ltd,Cybersecurity,Singapore,Zain Yilmaz,zain.yilmaz@pulsesecurity.com,'+971557844913,active,2025-11-16T11:00:00+00:00,2025-12-14T06:24:42+00:00
+EXH0025,Pulse Intelligence S.A.,Energy,France,Yousef Johnson,yousef.johnson@pulseintelligence.com,'+971548219877,active,2025-11-19T11:00:00+00:00,2025-12-20T20:25:33+00:00
+EXH0026,Zenith Security FZ-LLC,Energy,Egypt,Khalid Ahmed,khalid.ahmed@zenithsecurity.com,'+971555952156,active,2025-10-26T11:00:00+00:00,2025-12-19T18:08:53+00:00
+EXH0027,IronGate Intelligence FZ-LLC,IoT,Saudi Arabia,Sara Ibrahim,sara.ibrahim@irongateintelligence.com,'+971556234241,active,2025-12-11T11:00:00+00:00,2025-12-23T18:04:09+00:00
+EXH0028,Keystone Systems S.A.,IoT,Singapore,Mariam Nasser,mariam.nasser@keystonesystems.com,'+971523166777,active,2025-12-02T08:00:00+00:00,2025-12-14T12:18:15+00:00
+EXH0029,Sentra Analytics FZ-LLC,IoT,Germany,Yousef Brown,yousef.brown@sentraanalytics.com,'+971527471503,active,2025-11-28T08:00:00+00:00,2025-12-07T03:03:40+00:00
+EXH0030,Fusion Services S.A.,Cybersecurity,Saudi Arabia,Yousef Ahmed,yousef.ahmed@fusionservices.com,'+971522178012,active,2025-11-05T08:00:00+00:00,2025-12-09T18:06:41+00:00
+EXH0031,Nova Dynamics Inc,Energy,Qatar,Zain Anderson,zain.anderson@novadynamics.com,'+971525854002,active,2025-11-08T11:00:00+00:00,2026-01-03T17:54:27+00:00
+EXH0032,Keystone Technologies PLC,Robotics,India,Adam Mahmoud,adam.mahmoud@keystonetechnologies.com,'+971508804549,active,2025-12-19T10:00:00+00:00,2026-01-10T22:11:55+00:00
+EXH0033,Polaris Consulting GmbH,HealthTech,Singapore,Bilal Nasser,bilal.nasser@polarisconsulting.com,'+971565538526,active,2025-11-20T11:00:00+00:00,2025-12-07T18:10:41+00:00
+EXH0034,BluePeak Analytics GmbH,Telecom,UAE,Sameer Khan,sameer.khan@bluepeakanalytics.com,'+971545294805,active,2025-11-08T11:00:00+00:00,2025-12-10T19:17:14+00:00
+EXH0035,Saffron Dynamics GmbH,Cloud,France,Amir Nasser,amir.nasser@saffrondynamics.com,'+971546782704,active,2025-11-03T08:00:00+00:00,2025-12-16T13:31:07+00:00
+EXH0036,CloudNine Consulting LLC,Cybersecurity,France,Anaya Brown,anaya.brown@cloudnineconsulting.com,'+971508630530,active,2025-11-18T08:00:00+00:00,2025-12-25T23:38:30+00:00
+EXH0037,BluePeak Consulting Inc,HealthTech,Egypt,Karim El-Sayed,karim.elsayed@bluepeakconsulting.com,'+971522153739,active,2025-12-10T11:00:00+00:00,2025-12-21T20:59:40+00:00
+EXH0038,Atlas Intelligence FZ-LLC,Robotics,Qatar,Faisal Garcia,faisal.garcia@atlasintelligence.com,'+971544101767,active,2025-11-29T08:00:00+00:00,2025-12-12T07:27:50+00:00
+EXH0039,SilverLine Automation Inc,Cybersecurity,Saudi Arabia,Lina Brown,lina.brown@silverlineautomation.com,'+971507720483,active,2025-11-06T11:00:00+00:00,2025-11-19T20:29:15+00:00
+EXH0040,Vertex Digital PLC,AI,Singapore,Sameer Ibrahim,sameer.ibrahim@vertexdigital.com,'+971507131964,active,2025-10-31T11:00:00+00:00,2025-11-27T22:20:38+00:00
+EXH0041,Aurora Networks S.A.,HealthTech,Qatar,Yousef Brown,yousef.brown@auroranetworks.com,'+971529292042,active,2025-12-02T08:00:00+00:00,2025-12-11T04:19:52+00:00
+EXH0042,Skyline Platforms LLC,FinTech,Singapore,Lina Fischer,lina.fischer@skylineplatforms.com,'+971543117307,active,2025-12-06T11:00:00+00:00,2026-01-04T15:28:27+00:00
+EXH0043,RedStone Labs Ltd,Smart Buildings,UAE,Samir Kaya,samir.kaya@redstonelabs.com,'+971549874012,active,2025-12-14T08:00:00+00:00,2025-12-21T22:21:35+00:00
+EXH0044,Atlas Intelligence FZ-LLC (EXH0044),Robotics,France,Nadia Williams,nadia.williams@atlasintelligence.com,'+971544404861,active,2025-11-15T11:00:00+00:00,2025-12-09T23:39:15+00:00
+EXH0045,Keystone Engineering S.A.,AI,UK,Mariam Fischer,mariam.fischer@keystoneengineering.com,'+971544271458,active,2025-11-17T11:00:00+00:00,2025-11-30T16:12:24+00:00
+EXH0046,SilverLine Services LLC,HealthTech,UK,Mariam Brown,mariam.brown@silverlineservices.com,'+971558289465,active,2025-12-09T11:00:00+00:00,2025-12-19T15:53:34+00:00
+EXH0047,BluePeak Systems LLC,Telecom,Egypt,Sofia Rahman,sofia.rahman@bluepeaksystems.com,'+971523129169,active,2025-11-07T10:00:00+00:00,2025-12-06T12:25:44+00:00
+EXH0048,Pulse Solutions FZ-LLC,IoT,USA,Tariq Ibrahim,tariq.ibrahim@pulsesolutions.com,'+971558756328,active,2025-12-10T12:00:00+00:00,2025-12-14T14:58:50+00:00
+EXH0049,Quant Digital S.A.,FinTech,Egypt,Imran Patel,imran.patel@quantdigital.com,'+971546873421,active,2025-11-01T08:00:00+00:00,2025-12-21T17:04:05+00:00
+EXH0050,Atlas Networks PLC,FinTech,France,Sara Singh,sara.singh@atlasnetworks.com,'+971507791157,active,2025-11-08T10:00:00+00:00,2025-11-28T03:32:16+00:00
+EXH0051,SilverLine Systems Ltd,Smart Buildings,Egypt,Rami El-Sayed,rami.elsayed@silverlinesystems.com,'+971504631759,active,2025-11-18T08:00:00+00:00,2025-12-06T01:13:28+00:00
+EXH0052,Lumina Networks Ltd,Smart Buildings,Qatar,Yousef Williams,yousef.williams@luminanetworks.com,'+971548224484,active,2025-12-04T11:00:00+00:00,2025-12-08T18:27:02+00:00
+EXH0053,Kairo Labs Inc,Smart Buildings,Saudi Arabia,Lina El-Sayed,lina.elsayed@kairolabs.com,'+971501212484,active,2025-11-30T08:00:00+00:00,2025-12-16T08:36:42+00:00
+EXH0054,RedStone Automation Ltd,IoT,Singapore,Aya Brown,aya.brown@redstoneautomation.com,'+971554592757,active,2025-12-26T12:00:00+00:00,2026-01-06T16:53:14+00:00
+EXH0055,Fusion Technologies LLC,Robotics,USA,Noor Williams,noor.williams@fusiontechnologies.com,'+971552447030,active,2025-11-22T11:00:00+00:00,2025-12-21T12:00:07+00:00
+EXH0056,Nimbus Security PLC,Smart Buildings,Singapore,Bilal Anderson,bilal.anderson@nimbussecurity.com,'+971503048950,active,2025-12-05T08:00:00+00:00,2025-12-06T13:40:27+00:00
+EXH0057,Quant Technologies PLC,Energy,UAE,Karim Kaya,karim.kaya@quanttechnologies.com,'+971555839042,active,2025-12-12T11:00:00+00:00,2026-01-05T18:01:33+00:00
+EXH0058,Keystone Cloud LLC,Cybersecurity,Qatar,Hassan Williams,hassan.williams@keystonecloud.com,'+971507555373,active,2025-12-11T11:00:00+00:00,2025-12-29T17:28:43+00:00
+EXH0059,SilverLine Dynamics LLC,Cloud,Qatar,Karim Schmidt,karim.schmidt@silverlinedynamics.com,'+971551416849,active,2025-11-06T08:00:00+00:00,2025-11-21T09:20:37+00:00
+EXH0060,IronGate Solutions S.A.,IoT,Egypt,Bilal Ali,bilal.ali@irongatesolutions.com,'+971563145046,active,2025-11-13T11:00:00+00:00,2025-11-22T00:54:22+00:00
+EXH0061,Helio Automation Inc,Cloud,Singapore,Leila Yilmaz,leila.yilmaz@helioautomation.com,'+971528489172,active,2025-12-22T10:00:00+00:00,2025-12-30T16:40:30+00:00
+EXH0062,BluePeak Consulting PLC,Telecom,France,Nadia Singh,nadia.singh@bluepeakconsulting.com,'+971527101745,active,2025-11-11T11:00:00+00:00,2025-12-19T22:53:27+00:00
+EXH0063,Fusion Automation S.A.,Telecom,USA,Yousef Rahman,yousef.rahman@fusionautomation.com,'+971561071644,active,2025-12-07T08:00:00+00:00,2025-12-13T17:33:45+00:00
+EXH0064,Stratus Engineering PLC,Energy,Germany,Noor Chen,noor.chen@stratusengineering.com,'+971526744011,active,2025-11-04T11:00:00+00:00,2025-11-28T01:01:49+00:00
+EXH0065,Kairo Dynamics LLC,AI,UK,Rana Brown,rana.brown@kairodynamics.com,'+971546540104,active,2025-11-19T11:00:00+00:00,2025-12-14T20:03:07+00:00
+EXH0066,Terra Systems FZ-LLC,Robotics,Germany,Leila Williams,leila.williams@terrasystems.com,'+971559819805,active,2025-12-08T11:00:00+00:00,2025-12-23T05:54:00+00:00
+EXH0067,Saffron Services S.A.,Telecom,Saudi Arabia,Zain Singh,zain.singh@saffronservices.com,'+971523118571,active,2025-11-27T11:00:00+00:00,2025-12-15T20:54:05+00:00
+EXH0068,Polaris Labs Inc,FinTech,UAE,Samir Taylor,samir.taylor@polarislabs.com,'+971542981420,active,2025-11-23T11:00:00+00:00,2025-12-17T12:38:05+00:00
+EXH0069,Skyline Intelligence Ltd,IoT,USA,Tariq Garcia,tariq.garcia@skylineintelligence.com,'+971505072156,active,2025-12-05T08:00:00+00:00,2025-12-12T10:22:49+00:00
+EXH0070,Sentra Engineering PLC,HealthTech,Germany,Sameer Al-Mansoori,sameer.almansoori@sentraengineering.com,'+971549506333,active,2025-12-23T12:00:00+00:00,2026-01-09T03:13:14+00:00
+EXH0071,Terra Technologies Ltd,Smart Buildings,UK,Sameer Kaya,sameer.kaya@terratechnologies.com,'+971563009603,active,2025-11-19T11:00:00+00:00,2025-11-29T08:56:44+00:00
+EXH0072,Keystone Intelligence PLC,Cloud,UK,Lina Brown,lina.brown@keystoneintelligence.com,'+971548013428,active,2025-12-12T08:00:00+00:00,2025-12-14T12:14:59+00:00
+EXH0073,BluePeak Networks S.A.,AI,Germany,Mariam Ibrahim,mariam.ibrahim@bluepeaknetworks.com,'+971564983061,active,2025-10-30T11:00:00+00:00,2025-12-24T02:05:46+00:00
+EXH0074,Stratus Systems Inc,FinTech,UK,Sofia Johnson,sofia.johnson@stratussystems.com,'+971505285203,active,2025-12-16T08:00:00+00:00,2025-12-22T08:58:44+00:00
+EXH0075,Orion Dynamics LLC,Smart Buildings,UAE,Farah Ahmed,farah.ahmed@oriondynamics.com,'+971568534761,active,2025-11-24T11:00:00+00:00,2025-11-28T16:31:56+00:00
+EXH0076,IronGate Technologies Ltd,Cybersecurity,Egypt,Rana Santos,rana.santos@irongatetechnologies.com,'+971529751115,active,2025-11-21T08:00:00+00:00,2025-12-15T02:18:18+00:00
+EXH0077,Pulse Services Inc,Energy,Singapore,Aya Taylor,aya.taylor@pulseservices.com,'+971503618722,active,2025-10-26T11:00:00+00:00,2025-11-14T13:50:38+00:00
+EXH0078,Nimbus Solutions LLC,Energy,UAE,Yousef El-Sayed,yousef.elsayed@nimbussolutions.com,'+971509908406,active,2025-12-09T08:00:00+00:00,2025-12-11T23:52:27+00:00
+EXH0079,Apex Systems LLC,HealthTech,France,Hassan Yilmaz,hassan.yilmaz@apexsystems.com,'+971541765221,active,2025-11-26T11:00:00+00:00,2025-12-13T20:46:45+00:00
+EXH0080,BluePeak Technologies Inc,Energy,India,Amir Martin,amir.martin@bluepeaktechnologies.com,'+971545699125,active,2025-12-12T11:00:00+00:00,2025-12-22T07:02:40+00:00
+EXH0081,RedStone Intelligence Ltd (EXH0081),Energy,Egypt,Hana Weber,hana.weber@redstoneintelligence.com,'+971541614025,active,2025-11-22T11:00:00+00:00,2025-12-18T14:25:12+00:00
+EXH0082,Pulse Security S.A.,IoT,Egypt,Nadia Singh,nadia.singh@pulsesecurity.com,'+971553217169,active,2025-11-30T10:00:00+00:00,2025-12-05T13:00:37+00:00
+EXH0083,BluePeak Engineering Inc,Robotics,India,Zain Wong,zain.wong@bluepeakengineering.com,'+971568933221,active,2025-12-31T12:00:00+00:00,2026-01-06T14:27:22+00:00
+EXH0084,Apex Services S.A.,Telecom,Saudi Arabia,Mariam Ahmed,mariam.ahmed@apexservices.com,'+971547200112,active,2025-11-18T11:00:00+00:00,2025-12-18T12:43:58+00:00
+EXH0085,Kairo Services LLC,Cloud,Saudi Arabia,Lina Chen,lina.chen@kairoservices.com,'+971524052912,active,2025-11-01T11:00:00+00:00,2025-11-10T03:36:27+00:00
+EXH0086,Nexa Labs Inc,Cybersecurity,India,Hana Garcia,hana.garcia@nexalabs.com,'+971562215717,active,2025-12-03T08:00:00+00:00,2025-12-08T17:23:09+00:00
+EXH0087,Helio Intelligence Inc,Robotics,India,Imran Kaya,imran.kaya@heliointelligence.com,'+971507761550,active,2025-12-10T11:00:00+00:00,2025-12-10T11:51:56+00:00
+EXH0088,Lumina Technologies Ltd,FinTech,Saudi Arabia,Hana Khan,hana.khan@luminatechnologies.com,'+971524968663,active,2025-12-11T11:00:00+00:00,2025-12-18T18:45:09+00:00
+EXH0089,IronGate Intelligence S.A.,HealthTech,USA,Khalid Anderson,khalid.anderson@irongateintelligence.com,'+971541334260,active,2026-01-02T10:00:00+00:00,2026-01-05T17:14:07+00:00
+EXH0090,Keystone Consulting GmbH,AI,India,Tariq Mahmoud,tariq.mahmoud@keystoneconsulting.com,'+971559351734,active,2025-12-09T11:00:00+00:00,2025-12-21T00:23:06+00:00
+EXH0091,Skyline Dynamics PLC,Robotics,Qatar,Leila Rossi,leila.rossi@skylinedynamics.com,'+971552080041,active,2025-11-13T11:00:00+00:00,2025-12-23T19:56:58+00:00
+EXH0092,Apex Security GmbH,Cloud,Qatar,Imran Mahmoud,imran.mahmoud@apexsecurity.com,'+971525441558,active,2025-12-10T11:00:00+00:00,2025-12-13T13:56:35+00:00
+EXH0093,Nexa Dynamics PLC,IoT,UK,Samir Yilmaz,samir.yilmaz@nexadynamics.com,'+971504833828,active,2025-11-30T10:00:00+00:00,2025-12-21T19:26:09+00:00
+EXH0094,Nimbus Solutions LLC (EXH0094),Robotics,USA,Noura Al-Mansoori,noura.almansoori@nimbussolutions.com,'+971527923182,active,2025-12-26T12:00:00+00:00,2025-12-29T21:07:57+00:00
+EXH0095,Nexa Intelligence Inc,Cloud,Qatar,Omar Brown,omar.brown@nexaintelligence.com,'+971501950022,active,2025-12-02T10:00:00+00:00,2025-12-02T23:22:44+00:00
+EXH0096,RedStone Consulting FZ-LLC,Cybersecurity,Germany,Amir Garcia,amir.garcia@redstoneconsulting.com,'+971526774051,active,2025-11-25T11:00:00+00:00,2025-12-18T04:24:02+00:00
+EXH0097,Helio Security Ltd,Smart Buildings,Saudi Arabia,Sameer Patel,sameer.patel@heliosecurity.com,'+971569500285,active,2025-11-23T08:00:00+00:00,2025-12-08T22:32:46+00:00
+EXH0098,Quant Solutions S.A.,Energy,Qatar,Rami Anderson,rami.anderson@quantsolutions.com,'+971563015510,active,2025-12-03T11:00:00+00:00,2026-01-04T14:37:53+00:00
+EXH0099,Stratus Labs Ltd,Smart Buildings,India,Khalid Fischer,khalid.fischer@stratuslabs.com,'+971547757189,active,2025-12-10T08:00:00+00:00,2025-12-29T13:05:19+00:00
+EXH0100,SilverLine Technologies PLC,Energy,India,Hassan Yilmaz,hassan.yilmaz@silverlinetechnologies.com,'+971558739734,active,2025-11-06T10:00:00+00:00,2025-11-15T09:16:44+00:00
+EXH0101,Atlas Services Ltd,Cloud,India,Mariam Farooq,mariam.farooq@atlasservices.com,'+971563023713,active,2026-01-01T08:00:00+00:00,2026-01-07T14:40:28+00:00
+EXH0102,Helio Consulting GmbH,IoT,Qatar,Khalid Chen,khalid.chen@helioconsulting.com,'+971569154960,active,2025-11-29T11:00:00+00:00,2025-12-04T17:24:05+00:00
+EXH0103,Iris Platforms PLC,Energy,India,Lina Hassan,lina.hassan@irisplatforms.com,'+971541725261,active,2025-12-21T11:00:00+00:00,2026-01-04T11:17:07+00:00
+EXH0104,Nexa Solutions GmbH,IoT,USA,Noura Rossi,noura.rossi@nexasolutions.com,'+971557742566,active,2025-11-14T11:00:00+00:00,2025-12-12T18:09:28+00:00
+EXH0105,IronGate Analytics Ltd,Cybersecurity,USA,Zain Yilmaz,zain.yilmaz@irongateanalytics.com,'+971505791663,active,2025-12-09T11:00:00+00:00,2025-12-14T21:41:40+00:00
+EXH0106,CloudNine Consulting GmbH,Cybersecurity,France,Aisha Brown,aisha.brown@cloudnineconsulting.com,'+971565985829,active,2025-11-14T11:00:00+00:00,2025-12-06T01:50:51+00:00
+EXH0107,Pulse Technologies PLC,Cybersecurity,Saudi Arabia,Zain El-Sayed,zain.elsayed@pulsetechnologies.com,'+971559026049,active,2025-11-10T11:00:00+00:00,2025-12-10T13:22:09+00:00
+EXH0108,Cobalt Digital LLC,FinTech,UK,Omar Hassan,omar.hassan@cobaltdigital.com,'+971561195511,active,2025-11-28T08:00:00+00:00,2025-12-22T13:39:48+00:00
+EXH0109,Nova Engineering LLC,Robotics,Saudi Arabia,Noor Yilmaz,noor.yilmaz@novaengineering.com,'+971547073841,active,2025-12-10T10:00:00+00:00,2025-12-12T06:09:40+00:00
+EXH0110,Lumina Security LLC,Robotics,Singapore,Hana Taylor,hana.taylor@luminasecurity.com,'+971501099149,active,2025-11-03T08:00:00+00:00,2025-11-04T14:14:34+00:00
+EXH0111,Nexa Solutions Inc,Cloud,India,Aya Rahman,aya.rahman@nexasolutions.com,'+971509076376,active,2025-12-01T11:00:00+00:00,2025-12-04T04:48:37+00:00
+EXH0112,Nimbus Platforms Inc,Cybersecurity,UK,Noor Weber,noor.weber@nimbusplatforms.com,'+971569578334,active,2025-12-08T08:00:00+00:00,2025-12-16T14:40:59+00:00
+EXH0113,Terra Dynamics GmbH,IoT,France,Zain Lee,zain.lee@terradynamics.com,'+971527663816,active,2025-12-13T08:00:00+00:00,2025-12-20T18:44:55+00:00
+EXH0114,Nimbus Intelligence LLC,IoT,France,Hassan Rahman,hassan.rahman@nimbusintelligence.com,'+971521165940,active,2025-10-29T11:00:00+00:00,2025-11-06T05:32:35+00:00
+EXH0115,Helio Dynamics GmbH,Robotics,India,Farah Singh,farah.singh@heliodynamics.com,'+971555698448,active,2025-11-02T08:00:00+00:00,2025-11-25T18:02:47+00:00
+EXH0116,IronGate Networks Inc,HealthTech,USA,Aisha El-Sayed,aisha.elsayed@irongatenetworks.com,'+971556430653,active,2025-11-15T11:00:00+00:00,2025-12-03T02:30:58+00:00
+EXH0117,Aurora Networks FZ-LLC,Smart Buildings,UK,Aisha Anderson,aisha.anderson@auroranetworks.com,'+971542461209,active,2025-12-07T10:00:00+00:00,2025-12-10T05:57:47+00:00
+EXH0118,Atlas Systems FZ-LLC,Cloud,Qatar,Noor Taylor,noor.taylor@atlassystems.com,'+971542812134,active,2025-11-27T11:00:00+00:00,2026-01-03T02:04:37+00:00
+EXH0119,Polaris Services GmbH,FinTech,UK,Omar Ahmed,omar.ahmed@polarisservices.com,'+971565583437,active,2025-11-23T08:00:00+00:00,2025-12-14T21:03:47+00:00
+EXH0120,Nova Engineering S.A.,Cybersecurity,Qatar,Anaya Chen,anaya.chen@novaengineering.com,'+971529736390,active,2025-11-13T11:00:00+00:00,2025-11-29T18:15:19+00:00
+EXH0121,Pulse Automation S.A.,HealthTech,UAE,Sara Khan,sara.khan@pulseautomation.com,'+971559443979,active,2025-12-13T08:00:00+00:00,2025-12-21T10:08:44+00:00
+EXH0122,Polaris Dynamics Ltd,Cloud,Egypt,Farah Santos,farah.santos@polarisdynamics.com,'+971557657929,active,2025-11-05T08:00:00+00:00,2025-11-22T06:53:08+00:00
+EXH0123,Stratus Systems Inc (EXH0123),HealthTech,UK,Anaya Schmidt,anaya.schmidt@stratussystems.com,'+971547504620,active,2025-11-01T11:00:00+00:00,2025-12-17T13:21:32+00:00
+EXH0124,Quant Automation Ltd,Cybersecurity,France,Aya Chen,aya.chen@quantautomation.com,'+971504320896,active,2025-12-03T11:00:00+00:00,2025-12-16T02:01:59+00:00
+EXH0125,SilverLine Solutions Ltd,IoT,UK,Mariam Weber,mariam.weber@silverlinesolutions.com,'+971565689462,active,2025-11-15T10:00:00+00:00,2025-12-09T03:37:30+00:00
+EXH0126,Keystone Systems FZ-LLC,Robotics,Germany,Samir Anderson,samir.anderson@keystonesystems.com,'+971508665498,active,2025-11-22T11:00:00+00:00,2026-01-02T09:50:44+00:00
+EXH0127,BluePeak Networks Inc,FinTech,Egypt,Bilal Mahmoud,bilal.mahmoud@bluepeaknetworks.com,'+971521855257,active,2025-11-22T10:00:00+00:00,2025-12-26T17:44:03+00:00
+EXH0128,Aurora Digital PLC,IoT,UAE,Tariq Patel,tariq.patel@auroradigital.com,'+971557067756,active,2025-11-05T11:00:00+00:00,2025-12-16T01:32:58+00:00
+EXH0129,CloudNine Analytics Ltd,IoT,France,Sara Ibrahim,sara.ibrahim@cloudnineanalytics.com,'+971552262273,active,2025-11-10T10:00:00+00:00,2025-11-22T08:44:57+00:00
+EXH0130,Cobalt Automation Ltd,Telecom,UK,Omar Anderson,omar.anderson@cobaltautomation.com,'+971528584586,active,2025-12-23T10:00:00+00:00,2025-12-24T22:35:47+00:00
+EXH0131,Vertex Dynamics S.A.,Robotics,Egypt,Samir Singh,samir.singh@vertexdynamics.com,'+971504177201,active,2025-12-11T10:00:00+00:00,2025-12-26T13:40:51+00:00
+EXH0132,Terra Intelligence GmbH,Smart Buildings,Egypt,Lina Patel,lina.patel@terraintelligence.com,'+971507187804,active,2025-11-23T08:00:00+00:00,2025-12-10T04:26:18+00:00
+EXH0133,Orion Technologies GmbH,Cybersecurity,Saudi Arabia,Lina Nasser,lina.nasser@oriontechnologies.com,'+971547210202,active,2025-12-15T11:00:00+00:00,2025-12-22T06:24:27+00:00
+EXH0134,Atlas Automation GmbH,IoT,UAE,Lina Ali,lina.ali@atlasautomation.com,'+971556529474,active,2025-12-27T10:00:00+00:00,2026-01-17T16:22:51+00:00
+EXH0135,Helio Analytics Ltd,Cybersecurity,USA,Farah Johnson,farah.johnson@helioanalytics.com,'+971505070248,active,2025-12-14T08:00:00+00:00,2025-12-18T18:01:03+00:00
+EXH0136,Fusion Analytics GmbH,Telecom,Singapore,Zain Farooq,zain.farooq@fusionanalytics.com,'+971504400538,active,2026-01-03T08:00:00+00:00,2026-01-06T17:41:41+00:00
+EXH0137,CloudNine Automation FZ-LLC,AI,India,Noura Patel,noura.patel@cloudnineautomation.com,'+971547808512,active,2025-10-29T11:00:00+00:00,2025-11-26T09:58:00+00:00
+EXH0138,Sentra Engineering Ltd,AI,France,Sameer El-Sayed,sameer.elsayed@sentraengineering.com,'+971569481637,active,2025-11-23T11:00:00+00:00,2025-12-02T04:48:44+00:00
+EXH0139,Helio Technologies PLC,Telecom,Qatar,Bilal Singh,bilal.singh@heliotechnologies.com,'+971527927016,active,2025-12-02T11:00:00+00:00,2025-12-17T18:40:47+00:00
+EXH0140,BluePeak Automation Inc,FinTech,Qatar,Lina Lee,lina.lee@bluepeakautomation.com,'+971551381114,active,2025-10-30T08:00:00+00:00,2025-12-14T02:32:43+00:00
+EXH0141,Sentra Dynamics PLC,Cybersecurity,France,Tariq Kaya,tariq.kaya@sentradynamics.com,'+971521826847,active,2025-11-12T08:00:00+00:00,2025-12-04T11:59:16+00:00
+EXH0142,SilverLine Networks LLC,Cybersecurity,Singapore,Sara Nasser,sara.nasser@silverlinenetworks.com,'+971543915111,active,2025-12-10T11:00:00+00:00,2025-12-21T06:50:39+00:00
+EXH0143,Nova Dynamics FZ-LLC,IoT,UAE,Rana Ali,rana.ali@novadynamics.com,'+971502867377,active,2025-11-16T11:00:00+00:00,2025-12-12T11:15:55+00:00
+EXH0144,Vertex Intelligence PLC,Telecom,UK,Rana Singh,rana.singh@vertexintelligence.com,'+971501816315,active,2025-12-19T10:00:00+00:00,2025-12-29T08:48:44+00:00
+EXH0145,Nexa Security LLC,Cloud,Qatar,Aya Weber,aya.weber@nexasecurity.com,'+971569765564,active,2025-11-03T08:00:00+00:00,2025-11-15T22:07:56+00:00
+EXH0146,Fusion Services GmbH,Cybersecurity,USA,Anaya Anderson,anaya.anderson@fusionservices.com,'+971503515386,active,2025-12-15T10:00:00+00:00,2025-12-28T16:26:29+00:00
+EXH0147,Atlas Engineering PLC,Cloud,Qatar,Sofia Ahmed,sofia.ahmed@atlasengineering.com,'+971563040877,active,2025-12-03T08:00:00+00:00,2025-12-21T21:31:20+00:00
+EXH0148,Pulse Intelligence Ltd,IoT,Germany,Yousef Al-Mansoori,yousef.almansoori@pulseintelligence.com,'+971542801650,active,2025-11-10T11:00:00+00:00,2025-11-22T10:40:03+00:00
+EXH0149,Stratus Digital GmbH,Robotics,Germany,Yousef Yilmaz,yousef.yilmaz@stratusdigital.com,'+971525558553,active,2025-12-13T11:00:00+00:00,2025-12-20T02:33:49+00:00
+EXH0150,Sentra Security Ltd,IoT,USA,Zain Weber,zain.weber@sentrasecurity.com,'+971554251689,active,2025-12-03T10:00:00+00:00,2025-12-29T00:58:09+00:00
+EXH0151,Orion Engineering LLC,Smart Buildings,UAE,Noura Singh,noura.singh@orionengineering.com,'+971564862845,active,2025-12-05T10:00:00+00:00,2025-12-12T09:25:47+00:00
+EXH0152,Sentra Intelligence LLC,Cloud,Egypt,Tariq Mahmoud,tariq.mahmoud@sentraintelligence.com,'+971563146197,active,2025-11-02T11:00:00+00:00,2025-12-11T10:25:49+00:00
+EXH0153,Aurora Intelligence Ltd,HealthTech,Qatar,Hassan Ali,hassan.ali@auroraintelligence.com,'+971563036800,active,2025-11-14T11:00:00+00:00,2025-12-23T12:44:58+00:00
+EXH0154,Polaris Solutions Inc,Robotics,Qatar,Amir Weber,amir.weber@polarissolutions.com,'+971544073844,active,2025-11-10T08:00:00+00:00,2025-12-22T17:50:04+00:00
+EXH0155,Quant Solutions LLC,Cloud,France,Leila Taylor,leila.taylor@quantsolutions.com,'+971505044516,active,2025-11-09T08:00:00+00:00,2025-11-29T09:25:21+00:00
+EXH0156,Polaris Analytics LLC,Robotics,Saudi Arabia,Sara Lee,sara.lee@polarisanalytics.com,'+971521356041,active,2026-01-06T10:00:00+00:00,2026-01-14T06:50:30+00:00
+EXH0157,RedStone Systems S.A.,Smart Buildings,Singapore,Khalid Rahman,khalid.rahman@redstonesystems.com,'+971504170601,active,2025-11-06T11:00:00+00:00,2025-12-25T00:19:48+00:00
+EXH0158,Cobalt Labs FZ-LLC,IoT,Germany,Aya Farooq,aya.farooq@cobaltlabs.com,'+971564051069,active,2025-11-11T11:00:00+00:00,2025-12-06T10:42:05+00:00
+EXH0159,Sentra Analytics Ltd,AI,Saudi Arabia,Sara Garcia,sara.garcia@sentraanalytics.com,'+971523623400,active,2025-11-16T11:00:00+00:00,2025-11-20T22:33:03+00:00
+EXH0160,Keystone Cloud PLC,AI,UK,Adam Lee,adam.lee@keystonecloud.com,'+971555786414,active,2025-12-19T08:00:00+00:00,2025-12-19T18:51:28+00:00
+EXH0161,Skyline Analytics LLC,Telecom,France,Nadia Khan,nadia.khan@skylineanalytics.com,'+971565310334,active,2025-11-07T10:00:00+00:00,2025-12-21T15:23:33+00:00
+EXH0162,Terra Solutions GmbH,Telecom,Singapore,Hassan Williams,hassan.williams@terrasolutions.com,'+971553776136,active,2025-12-02T11:00:00+00:00,2025-12-12T04:25:09+00:00
+EXH0163,Apex Services GmbH,FinTech,USA,Sara Lee,sara.lee@apexservices.com,'+971551326682,active,2025-12-03T11:00:00+00:00,2025-12-11T20:09:09+00:00
+EXH0164,Apex Labs Inc,Robotics,France,Noor Hassan,noor.hassan@apexlabs.com,'+971558193005,active,2025-11-24T11:00:00+00:00,2025-12-05T05:19:13+00:00
+EXH0165,IronGate Cloud GmbH,AI,France,Huda Rahman,huda.rahman@irongatecloud.com,'+971529809683,active,2025-11-10T11:00:00+00:00,2025-12-14T12:12:19+00:00
+EXH0166,Atlas Engineering LLC,IoT,Saudi Arabia,Farah Nasser,farah.nasser@atlasengineering.com,'+971564534614,active,2026-01-09T10:00:00+00:00,2026-01-16T09:01:26+00:00
+EXH0167,CloudNine Security LLC,Smart Buildings,Singapore,Karim Schmidt,karim.schmidt@cloudninesecurity.com,'+971569250788,active,2025-11-07T11:00:00+00:00,2025-12-29T12:46:15+00:00
+EXH0168,Atlas Platforms Ltd,AI,USA,Sameer Yilmaz,sameer.yilmaz@atlasplatforms.com,'+971543316350,active,2025-11-22T12:00:00+00:00,2025-12-29T05:10:33+00:00
+EXH0169,Vanguard Automation LLC,Energy,India,Noor Williams,noor.williams@vanguardautomation.com,'+971545960964,active,2025-12-15T11:00:00+00:00,2025-12-25T03:47:22+00:00
+EXH0170,Atlas Dynamics S.A.,Robotics,Qatar,Samir Singh,samir.singh@atlasdynamics.com,'+971508062497,active,2025-11-08T11:00:00+00:00,2025-12-20T04:20:38+00:00
+EXH0171,Saffron Consulting Inc,Cybersecurity,Qatar,Huda Patel,huda.patel@saffronconsulting.com,'+971546025082,active,2025-11-24T10:00:00+00:00,2025-12-08T15:51:25+00:00
+EXH0172,Pulse Networks S.A.,Energy,Saudi Arabia,Zain Santos,zain.santos@pulsenetworks.com,'+971509366389,active,2025-12-27T11:00:00+00:00,2026-01-03T00:30:55+00:00
+EXH0173,RedStone Systems Ltd,Telecom,Saudi Arabia,Tariq Farooq,tariq.farooq@redstonesystems.com,'+971504032413,active,2025-11-30T10:00:00+00:00,2025-12-01T02:14:58+00:00
+EXH0174,Iris Solutions S.A.,Cloud,UK,Omar Khan,omar.khan@irissolutions.com,'+971523327014,active,2025-12-19T12:00:00+00:00,2026-01-11T06:06:00+00:00
+EXH0175,Apex Digital Ltd,FinTech,Saudi Arabia,Hassan Farooq,hassan.farooq@apexdigital.com,'+971563328689,active,2025-12-05T10:00:00+00:00,2025-12-12T17:08:06+00:00
+EXH0176,Pulse Labs Ltd,Energy,France,Hassan Santos,hassan.santos@pulselabs.com,'+971544983903,active,2025-11-20T10:00:00+00:00,2025-12-18T23:24:14+00:00
+EXH0177,Saffron Solutions Inc,FinTech,France,Hassan Weber,hassan.weber@saffronsolutions.com,'+971543830280,active,2025-11-29T11:00:00+00:00,2025-12-21T12:01:22+00:00
+EXH0178,Terra Labs GmbH,FinTech,UAE,Nadia Lee,nadia.lee@terralabs.com,'+971562026172,active,2025-11-20T08:00:00+00:00,2025-11-26T14:02:04+00:00
+EXH0179,Iris Services Inc,Energy,Germany,Samir Rahman,samir.rahman@irisservices.com,'+971527145253,active,2025-12-03T08:00:00+00:00,2025-12-25T08:13:44+00:00
+EXH0180,Lumina Intelligence Ltd,Cloud,Singapore,Zain Schmidt,zain.schmidt@luminaintelligence.com,'+971563279768,active,2025-12-11T11:00:00+00:00,2025-12-11T15:06:08+00:00
+EXH0181,Saffron Intelligence Inc,AI,Egypt,Sara Santos,sara.santos@saffronintelligence.com,'+971551922926,active,2025-11-20T10:00:00+00:00,2025-12-09T09:40:42+00:00
+EXH0182,Sentra Cloud Inc,Telecom,Qatar,Hana Khan,hana.khan@sentracloud.com,'+971567736629,active,2025-12-11T10:00:00+00:00,2025-12-21T18:45:50+00:00
+EXH0183,Atlas Services GmbH,Energy,Qatar,Noor Anderson,noor.anderson@atlasservices.com,'+971528824552,active,2025-12-14T10:00:00+00:00,2025-12-21T12:12:40+00:00
+EXH0184,Nexa Dynamics Ltd,IoT,Germany,Huda Hassan,huda.hassan@nexadynamics.com,'+971543290943,active,2025-12-12T10:00:00+00:00,2025-12-24T16:57:06+00:00
+EXH0185,Kairo Security FZ-LLC,Smart Buildings,Germany,Yousef Fischer,yousef.fischer@kairosecurity.com,'+971553968054,active,2025-11-11T11:00:00+00:00,2025-12-21T16:09:32+00:00
+EXH0186,Vanguard Networks Ltd,FinTech,France,Imran Kaya,imran.kaya@vanguardnetworks.com,'+971504409811,active,2025-12-12T11:00:00+00:00,2025-12-16T16:41:37+00:00
+EXH0187,Cobalt Cloud FZ-LLC,Cloud,Egypt,Samir Ali,samir.ali@cobaltcloud.com,'+971569206651,active,2025-12-02T11:00:00+00:00,2025-12-15T18:10:20+00:00
+EXH0188,BluePeak Analytics LLC,FinTech,India,Anaya Ibrahim,anaya.ibrahim@bluepeakanalytics.com,'+971549880406,active,2025-11-22T08:00:00+00:00,2025-12-24T18:18:34+00:00
+EXH0189,IronGate Dynamics LLC,Cloud,UAE,Sara Nasser,sara.nasser@irongatedynamics.com,'+971507338655,active,2025-11-03T08:00:00+00:00,2025-12-16T14:07:58+00:00
+EXH0190,Keystone Technologies GmbH,HealthTech,Singapore,Sara Weber,sara.weber@keystonetechnologies.com,'+971546660531,active,2025-12-05T11:00:00+00:00,2025-12-06T06:30:40+00:00
+EXH0191,Skyline Cloud GmbH,HealthTech,UK,Sameer Santos,sameer.santos@skylinecloud.com,'+971561403777,active,2025-10-31T11:00:00+00:00,2025-12-22T06:32:28+00:00
+EXH0192,Vertex Systems GmbH,Cybersecurity,Singapore,Anaya Brown,anaya.brown@vertexsystems.com,'+971556835578,active,2025-12-11T10:00:00+00:00,2025-12-12T10:34:58+00:00
+EXH0193,Saffron Security LLC,Energy,France,Yousef Martin,yousef.martin@saffronsecurity.com,'+971553784798,active,2025-11-15T08:00:00+00:00,2025-12-11T05:08:25+00:00
+EXH0194,Nimbus Intelligence LLC (EXH0194),Telecom,France,Rami Martin,rami.martin@nimbusintelligence.com,'+971502798154,active,2025-11-04T08:00:00+00:00,2025-12-05T22:53:29+00:00
+EXH0195,Cobalt Labs FZ-LLC (EXH0195),Telecom,UK,Rana Patel,rana.patel@cobaltlabs.com,'+971552931876,active,2025-11-11T08:00:00+00:00,2025-12-19T01:08:07+00:00
+EXH0196,Helio Cloud Ltd,AI,France,Imran Hassan,imran.hassan@heliocloud.com,'+971551388576,active,2025-12-23T10:00:00+00:00,2025-12-24T21:28:40+00:00
+EXH0197,Terra Technologies PLC,FinTech,Germany,Anaya Chen,anaya.chen@terratechnologies.com,'+971552898212,active,2025-11-27T08:00:00+00:00,2025-12-06T02:45:36+00:00
+EXH0198,Saffron Networks GmbH,AI,Germany,Karim Nasser,karim.nasser@saffronnetworks.com,'+971555695427,active,2025-12-05T11:00:00+00:00,2025-12-20T11:15:33+00:00
+EXH0199,Nexa Security Ltd,HealthTech,India,Noura Garcia,noura.garcia@nexasecurity.com,'+971568439192,active,2025-12-13T10:00:00+00:00,2025-12-16T09:36:46+00:00
+EXH0200,Apex Security Ltd,Telecom,Germany,Omar Schmidt,omar.schmidt@apexsecurity.com,'+971503587256,active,2025-12-27T11:00:00+00:00,2026-01-01T03:11:51+00:00
+EXH0201,Cobalt Solutions LLC,IoT,India,Sameer Taylor,sameer.taylor@cobaltsolutions.com,'+971568583969,active,2025-11-13T11:00:00+00:00,2025-12-14T03:46:11+00:00
+EXH0202,Nova Consulting LLC,Telecom,UAE,Omar Ibrahim,omar.ibrahim@novaconsulting.com,'+971523364566,active,2025-11-24T10:00:00+00:00,2025-12-30T20:37:05+00:00
+EXH0203,Vanguard Consulting Ltd,Cybersecurity,Egypt,Mariam El-Sayed,mariam.elsayed@vanguardconsulting.com,'+971544784556,active,2025-11-07T11:00:00+00:00,2025-11-17T13:24:19+00:00
+EXH0204,Saffron Engineering Inc,Energy,Singapore,Noor Farooq,noor.farooq@saffronengineering.com,'+971522247224,active,2025-12-02T08:00:00+00:00,2025-12-10T12:39:44+00:00
+EXH0205,Keystone Security LLC,HealthTech,Singapore,Imran Brown,imran.brown@keystonesecurity.com,'+971526000358,active,2025-12-29T12:00:00+00:00,2026-01-11T01:21:05+00:00
+EXH0206,Iris Digital LLC,Robotics,UAE,Zain Schmidt,zain.schmidt@irisdigital.com,'+971547550927,active,2025-12-15T11:00:00+00:00,2025-12-25T07:26:58+00:00
+EXH0207,RedStone Labs LLC,AI,Qatar,Anaya Al-Mansoori,anaya.almansoori@redstonelabs.com,'+971567367855,active,2025-11-27T11:00:00+00:00,2025-11-28T16:49:51+00:00
+EXH0208,CloudNine Systems LLC,HealthTech,UAE,Zain Al-Mansoori,zain.almansoori@cloudninesystems.com,'+971548682670,active,2025-10-30T11:00:00+00:00,2025-11-11T17:54:09+00:00
+EXH0209,Keystone Networks GmbH,IoT,Saudi Arabia,Tariq Williams,tariq.williams@keystonenetworks.com,'+971558978311,active,2025-12-14T08:00:00+00:00,2025-12-19T10:56:03+00:00
+EXH0210,Saffron Technologies GmbH,IoT,Egypt,Karim Chen,karim.chen@saffrontechnologies.com,'+971548476334,active,2025-12-08T11:00:00+00:00,2025-12-25T09:47:32+00:00
+EXH0211,RedStone Technologies Ltd,HealthTech,Egypt,Rami Khan,rami.khan@redstonetechnologies.com,'+971559267663,active,2025-12-06T11:00:00+00:00,2025-12-12T04:43:29+00:00
+EXH0212,Aurora Platforms FZ-LLC,AI,Germany,Faisal Ibrahim,faisal.ibrahim@auroraplatforms.com,'+971525692988,active,2025-12-02T11:00:00+00:00,2025-12-03T01:32:38+00:00
+EXH0213,Fusion Dynamics Ltd,Energy,France,Zain Fischer,zain.fischer@fusiondynamics.com,'+971528783880,active,2025-12-27T11:00:00+00:00,2026-01-01T13:35:18+00:00
+EXH0214,Sentra Technologies FZ-LLC,Smart Buildings,India,Faisal Martin,faisal.martin@sentratechnologies.com,'+971542204077,active,2025-12-16T11:00:00+00:00,2025-12-18T05:03:12+00:00
+EXH0215,Lumina Intelligence PLC,Smart Buildings,USA,Huda Khan,huda.khan@luminaintelligence.com,'+971506136192,active,2025-12-01T11:00:00+00:00,2025-12-08T00:35:20+00:00
+EXH0216,Nova Systems LLC,Cybersecurity,Qatar,Lina Johnson,lina.johnson@novasystems.com,'+971521403922,active,2025-11-24T11:00:00+00:00,2025-12-25T04:20:27+00:00
+EXH0217,Sentra Intelligence LLC (EXH0217),Cloud,Germany,Sara Anderson,sara.anderson@sentraintelligence.com,'+971558598927,active,2025-11-30T11:00:00+00:00,2025-12-18T01:04:43+00:00
+EXH0218,Sentra Automation LLC,Cybersecurity,Qatar,Zain Santos,zain.santos@sentraautomation.com,'+971563318556,active,2025-11-10T08:00:00+00:00,2025-11-12T19:31:59+00:00
+EXH0219,Vanguard Networks GmbH,Cloud,India,Hassan Farooq,hassan.farooq@vanguardnetworks.com,'+971542992774,active,2025-12-07T12:00:00+00:00,2025-12-23T04:26:53+00:00
+EXH0220,BluePeak Intelligence S.A.,Energy,Singapore,Rami Martin,rami.martin@bluepeakintelligence.com,'+971523225403,active,2025-11-24T08:00:00+00:00,2025-11-30T08:00:14+00:00
+EXH0221,Quant Automation S.A.,Energy,UK,Lina Martin,lina.martin@quantautomation.com,'+971565854615,active,2025-12-09T12:00:00+00:00,2025-12-13T13:14:57+00:00
+EXH0222,Aurora Services PLC,Cybersecurity,UK,Rami Ibrahim,rami.ibrahim@auroraservices.com,'+971565384038,active,2025-10-28T11:00:00+00:00,2025-12-01T11:36:29+00:00
+EXH0223,Sentra Systems Ltd,Cloud,Egypt,Khalid Chen,khalid.chen@sentrasystems.com,'+971508656690,active,2025-12-14T11:00:00+00:00,2025-12-19T23:59:15+00:00
+EXH0224,Skyline Platforms LLC (EXH0224),Telecom,France,Sara Schmidt,sara.schmidt@skylineplatforms.com,'+971561872410,active,2025-11-15T12:00:00+00:00,2025-12-27T19:29:55+00:00
+EXH0225,Zenith Services PLC,AI,UAE,Anaya El-Sayed,anaya.elsayed@zenithservices.com,'+971558613702,active,2025-12-02T11:00:00+00:00,2025-12-22T22:39:39+00:00
+EXH0226,Polaris Labs S.A.,HealthTech,France,Aisha Taylor,aisha.taylor@polarislabs.com,'+971566275586,active,2025-12-06T11:00:00+00:00,2025-12-11T03:14:25+00:00
+EXH0227,Saffron Analytics PLC,FinTech,UAE,Imran Schmidt,imran.schmidt@saffronanalytics.com,'+971542714888,active,2025-12-08T11:00:00+00:00,2025-12-24T02:39:28+00:00
+EXH0228,Kairo Security GmbH,Energy,Qatar,Imran Johnson,imran.johnson@kairosecurity.com,'+971542443503,active,2025-11-13T08:00:00+00:00,2025-12-07T03:20:42+00:00
+EXH0229,Nova Networks Inc,IoT,Singapore,Tariq Rahman,tariq.rahman@novanetworks.com,'+971541522867,active,2025-11-19T10:00:00+00:00,2025-11-30T19:04:15+00:00
+EXH0230,Vertex Dynamics Ltd,Telecom,UK,Huda Santos,huda.santos@vertexdynamics.com,'+971526916004,active,2025-12-16T08:00:00+00:00,2025-12-27T07:02:22+00:00
+EXH0231,Polaris Intelligence FZ-LLC,Telecom,France,Farah Ali,farah.ali@polarisintelligence.com,'+971559520282,active,2025-11-13T12:00:00+00:00,2025-11-15T14:16:29+00:00
+EXH0232,Nexa Technologies Inc,Cybersecurity,Saudi Arabia,Nadia El-Sayed,nadia.elsayed@nexatechnologies.com,'+971565746597,active,2025-12-17T08:00:00+00:00,2025-12-24T00:34:45+00:00
+EXH0233,SilverLine Engineering GmbH,AI,Germany,Imran Ahmed,imran.ahmed@silverlineengineering.com,'+971542639732,active,2026-01-07T10:00:00+00:00,2026-01-16T01:06:20+00:00
+EXH0234,Nimbus Technologies S.A.,Energy,UK,Karim Taylor,karim.taylor@nimbustechnologies.com,'+971566322262,active,2025-10-28T11:00:00+00:00,2025-11-13T16:26:56+00:00
+EXH0235,Cobalt Analytics S.A.,HealthTech,UAE,Hana Anderson,hana.anderson@cobaltanalytics.com,'+971554329634,active,2025-11-30T11:00:00+00:00,2025-12-22T00:13:54+00:00
+EXH0236,Quant Labs Ltd,Telecom,Egypt,Zain Hassan,zain.hassan@quantlabs.com,'+971522737226,active,2025-11-27T11:00:00+00:00,2025-12-04T04:13:51+00:00
+EXH0237,Zenith Analytics PLC,Cloud,Qatar,Samir Farooq,samir.farooq@zenithanalytics.com,'+971529502366,active,2025-12-28T12:00:00+00:00,2026-01-09T05:21:29+00:00
+EXH0238,Orion Networks Ltd,HealthTech,Germany,Aisha Taylor,aisha.taylor@orionnetworks.com,'+971567952551,active,2025-11-02T08:00:00+00:00,2025-11-06T19:22:15+00:00
+EXH0239,IronGate Platforms Inc,Robotics,Qatar,Hassan Lee,hassan.lee@irongateplatforms.com,'+971562684462,active,2025-11-05T11:00:00+00:00,2025-11-13T10:45:11+00:00
+EXH0240,Atlas Networks LLC,FinTech,Singapore,Samir Lee,samir.lee@atlasnetworks.com,'+971555699272,active,2025-12-12T08:00:00+00:00,2025-12-18T19:03:38+00:00
+EXH0241,SilverLine Automation Inc (EXH0241),HealthTech,India,Mariam Johnson,mariam.johnson@silverlineautomation.com,'+971542780812,active,2025-12-01T10:00:00+00:00,2025-12-28T17:03:38+00:00
+EXH0242,Vertex Digital Inc,IoT,Singapore,Nadia Wong,nadia.wong@vertexdigital.com,'+971553494782,active,2025-11-10T11:00:00+00:00,2025-11-16T23:00:27+00:00
+EXH0243,CloudNine Technologies Inc,FinTech,UAE,Samir Rossi,samir.rossi@cloudninetechnologies.com,'+971548025509,active,2025-11-16T11:00:00+00:00,2025-12-20T13:32:05+00:00
+EXH0244,Kairo Services GmbH,HealthTech,Egypt,Imran Ibrahim,imran.ibrahim@kairoservices.com,'+971521870775,active,2025-11-20T10:00:00+00:00,2025-11-30T06:51:11+00:00
+EXH0245,Stratus Networks Ltd,Cybersecurity,UAE,Huda Rahman,huda.rahman@stratusnetworks.com,'+971529232167,active,2025-12-26T12:00:00+00:00,2026-01-02T17:18:39+00:00
+EXH0246,Nexa Consulting FZ-LLC,Energy,UK,Adam Patel,adam.patel@nexaconsulting.com,'+971564312839,active,2025-11-21T11:00:00+00:00,2025-12-03T10:28:43+00:00
+EXH0247,BluePeak Digital Ltd (EXH0247),Cybersecurity,Qatar,Aya Nasser,aya.nasser@bluepeakdigital.com,'+971561445872,active,2025-12-14T08:00:00+00:00,2025-12-16T02:24:26+00:00
+EXH0248,Skyline Consulting S.A.,Cloud,India,Khalid Garcia,khalid.garcia@skylineconsulting.com,'+971556752913,active,2025-11-19T11:00:00+00:00,2025-12-23T09:56:22+00:00
+EXH0249,Quant Intelligence GmbH,FinTech,Qatar,Omar Hassan,omar.hassan@quantintelligence.com,'+971542571305,active,2025-11-23T10:00:00+00:00,2025-12-10T22:12:47+00:00
+EXH0250,BluePeak Solutions Ltd,HealthTech,UK,Zain Al-Mansoori,zain.almansoori@bluepeaksolutions.com,'+971525564710,active,2025-11-28T10:00:00+00:00,2026-01-06T17:40:58+00:00

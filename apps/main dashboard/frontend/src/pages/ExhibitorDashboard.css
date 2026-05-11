@@ -1,0 +1,1613 @@
+.exhibitorTheme {
+  --exh-accent: #35005C;
+  --exh-accent-soft: rgba(53, 0, 92, 0.08);
+  --exh-accent-border: rgba(53, 0, 92, 0.18);
+  --exh-bg: #f6f7fb;
+  --exh-card: #ffffff;
+  --exh-line: #e5e7eb;
+  --exh-ink: #0f172a;
+  --exh-muted: #6b7280;
+  --exh-shadow-soft: 0 6px 18px rgba(15, 23, 42, 0.05);
+  --exh-radius: 16px;
+  --spark-accent: var(--exh-accent);
+
+  min-height: 100vh;
+  background: var(--exh-bg);
+  color: var(--exh-ink);
+  font-family: var(--app-font) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.exhibitorTheme *,
+.exhibitorTheme *::before,
+.exhibitorTheme *::after {
+  font-family: inherit;
+}
+
+.exhibitorTheme button,
+.exhibitorTheme input,
+.exhibitorTheme textarea,
+.exhibitorTheme select {
+  font-family: inherit;
+}
+
+.exhShell {
+  display: grid;
+  grid-template-columns: 292px 1fr;
+  min-height: 100vh;
+}
+
+.exhSidebar {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  overflow-y: auto;
+  background: #fff;
+  border-right: 1px solid var(--exh-line);
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exhMain {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 100vh;
+}
+
+.exhBrand {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -0.6px;
+  margin-bottom: 18px;
+  line-height: 1;
+}
+
+.exhSidebarLabel {
+  font-size: 13px;
+  font-weight: 800;
+  opacity: 0.55;
+  margin: 10px 0 10px;
+  letter-spacing: 0.02em;
+}
+
+.exhSidebarNav {
+  display: grid;
+  gap: 8px;
+}
+
+.exhSidebarSpacer {
+  flex: 1;
+}
+
+.exhSideLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 0;
+  background: transparent;
+  color: #111827;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.exhSideLink:hover {
+  background: #f8f6fb;
+}
+
+.exhSideLink.isActive {
+  color: var(--exh-accent);
+  background: var(--exh-accent-soft);
+  font-weight: 800;
+}
+
+.exhSideLink.isGhost {
+  color: #111827;
+}
+
+
+
+.exhLogoutBtn {
+  margin-top: 12px;
+  min-height: 46px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid #f3d8ea;
+  background: #fdf5fb;
+  color: #9b3a7a;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.exhHeader {
+  padding: 22px 24px 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+}
+
+.exhHeaderTitle {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--exh-accent);
+  letter-spacing: -0.02em;
+}
+
+.exhHeaderSub {
+  margin-top: 6px;
+  font-size: 14px;
+  opacity: 0.65;
+  font-weight: 500;
+}
+
+.exhHeaderRight {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.exhSearchWrap {
+  position: relative;
+  width: 360px;
+  max-width: 100%;
+}
+
+.exhSearchInput {
+  width: 100%;
+  height: 48px;
+  padding: 0 42px 0 14px;
+  border-radius: 14px;
+  border: 1px solid var(--exh-line);
+  background: #fff;
+  outline: none;
+  font-size: 16px;
+}
+
+.exhSearchInput:focus,
+.exhControl input:focus,
+.exhControl select:focus {
+  border-color: rgba(53, 0, 92, 0.35);
+  box-shadow: 0 0 0 4px rgba(53, 0, 92, 0.1);
+}
+
+.exhSearchIcon {
+  position: absolute;
+  right: 12px;
+  top: 14px;
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;
+}
+
+.exhSearchIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.exhUserCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid var(--exh-line);
+  min-height: 64px;
+}
+
+.exhUserName {
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.exhUserMeta {
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+.exhAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: #111827;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.exhContent {
+  padding: 0 24px 24px;
+  overflow: auto;
+  min-width: 0;
+}
+
+.exhControlsCard,
+.exhCard {
+  background: var(--exh-card);
+  border: 1px solid var(--exh-line);
+  border-radius: var(--exh-radius);
+  box-shadow: var(--exh-shadow-soft);
+}
+
+.exhControlsCard {
+  padding: 16px;
+}
+
+.exhControlsRow {
+  display: flex;
+  align-items: end;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.exhControl {
+  display: grid;
+  gap: 6px;
+  min-width: 190px;
+}
+
+.exhControl.isSmall {
+  min-width: 120px;
+}
+
+.exhControl label {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--exh-muted);
+}
+
+.exhControl input,
+.exhControl select {
+  height: 42px;
+  border: 1px solid var(--exh-line);
+  border-radius: 12px;
+  padding: 0 12px;
+  background: #fff;
+  outline: none;
+}
+
+.exhControlActions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.exhPrimaryBtn,
+.exhSecondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 12px;
+  padding: 11px 16px;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+}
+
+.exhPrimaryBtn {
+  border: 1px solid var(--exh-accent-border);
+  background: var(--exh-accent);
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(53, 0, 92, 0.18);
+}
+
+.exhPrimaryBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.exhPrimaryBtn.isBlock,
+.exhSecondaryBtn.isBlock {
+  width: 100%;
+}
+
+.exhSecondaryBtn {
+  border: 1px solid var(--exh-line);
+  background: #fff;
+  color: var(--exh-accent);
+}
+
+.exhPrimaryBtn:hover,
+.exhSecondaryBtn:hover,
+.exhLogoutBtn:hover,
+.exhSideLink:hover {
+  transform: translateY(-1px);
+}
+
+.exhBanner {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #f5f3ff;
+  border: 1px solid #ddd6fe;
+  color: #4c1d95;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.exhBanner.isError {
+  background: #fff1f2;
+  border-color: #fecdd3;
+  color: #9f1239;
+}
+
+.exhPageWrap {
+  padding-top: 24px;
+}
+
+.exhTopRow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.exhBottomGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
+  padding-top: 24px;
+}
+
+.exhKpiCard,
+.exhCard {
+  overflow: visible;
+}
+
+.exhCardInner {
+  position: relative;
+  padding: 22px 16px 14px;
+}
+
+.exhCardTitle {
+  margin: 0;
+  color: var(--exh-accent);
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+
+.exhCardValue {
+  margin: 10px 0 6px;
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.exhCardSub {
+  margin: 0;
+  color: var(--exh-muted);
+  font-size: 12px;
+}
+
+.exhCardMetaRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.exhIconCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--exh-accent);
+  color: #fff;
+  position: absolute;
+  top: -40px;
+  left: 18px;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.12);
+}
+
+.exhIconCircle svg {
+  width: 28px;
+  height: 28px;
+}
+
+.exhBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 58px;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.exhBadge.isgood {
+  background: rgba(34, 197, 94, 0.14);
+  color: #166534;
+}
+
+.exhBadge.iswarning {
+  background: rgba(245, 158, 11, 0.16);
+  color: #92400e;
+}
+
+.exhBadge.iscritical {
+  background: rgba(239, 68, 68, 0.14);
+  color: #991b1b;
+}
+
+.exhCardHeaderRow {
+  min-height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 18px 16px 18px;
+  border-bottom: 1px solid var(--exh-line);
+}
+
+.exhCardHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.exhCardHeaderLeft h3 {
+  margin: 0;
+  color: var(--exh-accent);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.exhCardHeaderLeft p {
+  margin: 4px 0 0;
+  color: var(--exh-muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.exhCardHeaderRight,
+.exhHint {
+  color: var(--exh-muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.exhCardBody {
+  padding: 16px 18px;
+}
+
+.exhEmptyState,
+.exhEmptyInline {
+  color: var(--exh-muted);
+  font-size: 13px;
+}
+
+/* compact heatmap */
+.exhHallSnapshot {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.exhHallTile {
+  border-radius: 10px;
+  padding: 8px 9px;
+  display: grid;
+  gap: 3px;
+  min-height: 54px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.exhHallTile span {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.exhHallTile strong {
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.exhHeatmapTableWrap {
+  overflow: auto;
+  border: 1px solid var(--exh-line);
+  border-radius: 12px;
+  max-height: 420px;
+}
+
+.exhHeatmapTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 560px;
+}
+
+.exhHeatmapTable thead th {
+  position: sticky;
+  top: 0;
+  background: #fafafc;
+  z-index: 1;
+  padding: 8px 10px;
+  font-size: 10px;
+  font-weight: 900;
+  color: var(--exh-muted);
+  text-align: left;
+  border-bottom: 1px solid var(--exh-line);
+  white-space: nowrap;
+}
+
+.exhHeatmapTable tbody td {
+  padding: 7px 10px;
+  font-size: 10px;
+  font-weight: 800;
+  border-bottom: 1px solid #f1f5f9;
+  white-space: nowrap;
+}
+
+.exhStickyCell {
+  position: sticky;
+  left: 0;
+  background: #fff;
+  z-index: 1;
+  color: var(--exh-ink);
+  box-shadow: 4px 0 10px rgba(15, 23, 42, 0.03);
+}
+
+.exhLegendRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 10px;
+  color: var(--exh-muted);
+  font-size: 11px;
+}
+
+.exhLegendRow small {
+  margin-left: auto;
+  font-size: 10px;
+}
+
+.exhLegendBar {
+  width: 120px;
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgb(228,233,246) 0%, rgb(53,0,92) 100%);
+}
+
+.exhReportsGrid,
+.exhLeadGrid,
+.exhMiniChartGrid {
+  display: grid;
+  gap: 16px;
+}
+
+.exhReportsGrid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.exhMiniChartGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.exhLeadGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.exhReportActions,
+.exhLeadPanel,
+.exhMiniChartCard,
+.exhTableCard {
+  background: #fafafc;
+  border: 1px solid #eef2f7;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.exhLeadPanel.isMuted {
+  background: linear-gradient(180deg, #faf5ff 0%, #fff 100%);
+}
+
+.exhMutedNote,
+.exhLeadNote {
+  color: var(--exh-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.exhChecklist {
+  display: grid;
+  gap: 10px;
+}
+
+.exhChecklistItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #eef2f7;
+  background: #fff;
+}
+
+.exhChecklistItem strong,
+.exhMiniHeader strong {
+  display: block;
+  font-weight: 900;
+}
+
+.exhChecklistItem p,
+.exhMiniHeader span {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: var(--exh-muted);
+}
+
+.exhStatusDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.exhStatusDot.isgood {
+  background: #16a34a;
+}
+
+.exhStatusDot.iswarning {
+  background: #eab308;
+}
+
+.exhStatusDot.iscritical {
+  background: #dc2626;
+}
+
+.exhSectionDivider {
+  height: 1px;
+  background: var(--exh-line);
+  margin: 18px 0;
+}
+
+.exhMiniHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.exhDataTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.exhDataTable thead th {
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--exh-muted);
+  text-align: left;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--exh-line);
+}
+
+.exhDataTable tbody td {
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.exhDataTable td strong {
+  display: block;
+}
+
+.exhDataTable td p {
+  margin: 4px 0 0;
+  color: var(--exh-muted);
+  font-size: 12px;
+}
+
+.exhDataTable .isRight,
+.exhDataTable td.isRight {
+  text-align: right;
+}
+
+.exhInsightList {
+  display: grid;
+  gap: 10px;
+}
+
+.exhInsightItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f8f5fb;
+}
+
+.exhInsightItem p {
+  margin: 0;
+  color: #311041;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.exhInsightBullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--exh-accent);
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.exhContactList {
+  display: grid;
+  gap: 12px;
+}
+
+.exhContactList label {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--exh-muted);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.exhContactList strong {
+  font-size: 14px;
+}
+
+.exhLeadBullets {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: var(--exh-muted);
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.exhCard:hover,
+.exhControlsCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
+  transition: all 0.18s ease;
+}
+
+@media (max-width: 1280px) {
+  .exhTopRow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .exhBottomGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1100px) {
+  .exhShell {
+    grid-template-columns: 1fr;
+  }
+
+  .exhSidebar {
+    position: static;
+    height: auto;
+    overflow-y: visible;
+    border-right: 0;
+    border-bottom: 1px solid var(--exh-line);
+  }
+
+  .exhSidebarNav {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .exhSidebarSpacer {
+    display: none;
+  }
+
+  .exhHeader {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .exhHeaderRight {
+    justify-content: stretch;
+  }
+
+  .exhSearchWrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .exhTopRow,
+  .exhReportsGrid,
+  .exhLeadGrid,
+  .exhMiniChartGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .exhContent {
+    padding-inline: 14px;
+  }
+
+  .exhHeader {
+    padding-inline: 14px;
+  }
+
+  .exhControlsRow {
+    align-items: stretch;
+  }
+
+  .exhControl,
+  .exhControl.isSmall,
+  .exhControlActions {
+    min-width: 100%;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .exhControlActions {
+    justify-content: stretch;
+  }
+
+  .exhPrimaryBtn,
+  .exhSecondaryBtn {
+    width: 100%;
+  }
+}
+
+.exhKpiCard,
+.exhCardInner {
+  min-width: 0;
+}
+
+.exhCardValue.isBoothCode {
+  font-size: clamp(20px, 1.7vw, 28px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-width: 100%;
+} 
+
+.exhShell {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+}
+
+.exhBrand {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  margin-bottom: 18px;
+  line-height: 1;
+}
+
+.exhSideLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: auto;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 0;
+  background: transparent;
+  color: #111827;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.exhSideLink:hover {
+  background: #f8f6fb;
+}
+
+.exhSideLink.isActive {
+  color: var(--exh-accent);
+  background: var(--exh-accent-soft);
+  font-weight: 700;
+}
+
+.exhSideIcon {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.exhSideIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.exhLogoutBtn {
+  margin-top: 10px;
+  min-height: auto;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #f3d8ea;
+  background: #fdf5fb;
+  color: #9b3a7a;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.exhReportsPage .pageInner {
+  width: 100%;
+}
+
+.exhReportsHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.exhReportsCountTop {
+  color: var(--exh-accent);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.exhReportsControlsCard,
+.exhReportsTableCard {
+  background: #fff;
+  border: 1px solid var(--exh-line);
+  border-radius: 18px;
+  box-shadow: var(--exh-shadow-soft);
+}
+
+.exhReportsControlsCard {
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.exhReportsFiltersRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.exhFilterPill {
+  height: 38px;
+  min-width: 140px;
+  border-radius: 14px;
+  background: #d9d9d9;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  position: relative;
+}
+
+.exhPillSearch {
+  min-width: 230px;
+}
+
+.exhPillSelectWrap {
+  min-width: 140px;
+}
+
+.exhPillLeftIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--exh-accent);
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.exhPillInput {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  width: 100%;
+  font-size: 13px;
+  color: #1f2937;
+}
+
+.exhPillInput::placeholder {
+  color: #6b7280;
+}
+
+.exhPillSelect {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  appearance: none;
+  width: 100%;
+  font-size: 13px;
+  color: #111827;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.exhPillRightCaret {
+  position: absolute;
+  right: 12px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #425b76;
+  pointer-events: none;
+}
+
+.exhReportsTableCard {
+  overflow: hidden;
+}
+
+.exhReportsTableScroll {
+  overflow-x: auto;
+}
+
+.exhReportsTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1050px;
+}
+
+.exhReportsTable thead th {
+  text-align: left;
+  padding: 14px 16px;
+  color: var(--exh-accent);
+  font-size: 13px;
+  font-weight: 800;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.exhReportsTable tbody td {
+  padding: 14px 16px;
+  font-size: 13px;
+  color: #111827;
+  border-bottom: 1px solid #ececec;
+  vertical-align: middle;
+}
+
+.exhReportsTable tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.exhReportsTable .tdStrong {
+  font-weight: 800;
+}
+
+.exhReportsDesc {
+  max-width: 260px;
+  color: #374151;
+}
+
+.exhReportsTableEmpty {
+  text-align: center;
+  color: #6b7280;
+  padding: 24px 16px;
+}
+
+.exhReportsActionBtns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.exhActionIconBtn {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #8b8b8b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.exhActionIconBtn.isPrimary {
+  background: var(--exh-accent);
+  border-color: var(--exh-accent);
+  color: #fff;
+}
+
+.exhReportsPager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.exhReportsPagerNums {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.exhReportsPageBtn {
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+.exhReportsPageBtn.isActive {
+  background: #d9d9d9;
+  font-weight: 700;
+}
+
+.exhReportsDots {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.exhReportsNextBtn {
+  border: 0;
+  background: transparent;
+  color: #4b5563;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.exhReportsNextBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .exhReportsFiltersRow {
+    gap: 10px;
+  }
+
+  .exhFilterPill,
+  .exhPillSearch,
+  .exhPillSelectWrap {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .exhReportsPager {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
+
+.exhSideIcon {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: transparent;
+  border-radius: 0;
+  color: inherit;
+}
+
+.exhSideIcon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.exhShell {
+  display: grid;
+  grid-template-columns: var(--exh-sidebar-width, 292px) 1fr;
+  min-height: 100vh;
+  transition: grid-template-columns 280ms ease;
+}
+
+.exhSidebar {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  overflow: visible;
+  background: #fff;
+  border-right: 1px solid var(--exh-line);
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: padding 280ms ease;
+  z-index: 3;
+}
+
+.exhBrand {
+  position: relative;
+  height: 34px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -0.6px;
+  line-height: 1;
+}
+
+.exhBrandLong {
+  display: inline-block;
+  max-width: 240px;
+  opacity: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  transform: translateY(0);
+  transition: max-width 280ms ease, opacity 180ms ease, transform 280ms ease;
+}
+
+.exhBrandShort {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 180ms ease, transform 280ms ease;
+  pointer-events: none;
+}
+
+.sidebarCollapsed {
+  --exh-sidebar-width: 96px;
+}
+
+.sidebarCollapsed .exhSidebar {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.sidebarCollapsed .exhBrand {
+  justify-content: center;
+}
+
+.sidebarCollapsed .exhBrandLong {
+  max-width: 0;
+  opacity: 0;
+  transform: translateY(-4px);
+}
+
+.sidebarCollapsed .exhBrandShort {
+  opacity: 1;
+  transform: translateY(0);
+  justify-content: center;
+}
+
+.sidebarCollapsed .exhSidebarLabel {
+  text-align: center;
+}
+
+.sidebarCollapsed .exhSideLink,
+.sidebarCollapsed .exhLogoutBtn {
+  justify-content: center;
+  gap: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.exhLinkText {
+  display: inline-block;
+  max-width: 180px;
+  opacity: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  transform: translateX(0);
+  transition: max-width 280ms ease, opacity 180ms ease, transform 280ms ease;
+}
+
+.sidebarCollapsed .exhLinkText {
+  max-width: 0;
+  opacity: 0;
+  transform: translateX(-6px);
+  pointer-events: none;
+}
+
+.exhSidebarToggle {
+  position: absolute;
+  top: 22px;
+  right: -14px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: 9px;
+  border: 1.5px solid #d1d5db;
+  background: #fff;
+  color: #0f172a;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.exhSidebarToggle svg {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+.exhSidebarLabel {
+  font-size: 13px;
+  font-weight: 800;
+  opacity: 0.55;
+  margin: 10px 0 10px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  transition: text-align 280ms ease, opacity 180ms ease;
+}
+
+.exhSideLink {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  min-height: 48px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 0;
+  background: transparent;
+  color: #111827;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition:
+    background 0.18s ease,
+    color 0.18s ease,
+    transform 0.18s ease,
+    gap 0.28s ease,
+    padding 0.28s ease,
+    justify-content 0.28s ease;
+}
+
+.exhLogoutBtn {
+  margin-top: 12px;
+  min-height: 46px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid #f3d8ea;
+  background: #fdf5fb;
+  color: #9b3a7a;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  overflow: hidden;
+  transition:
+    background 0.18s ease,
+    color 0.18s ease,
+    gap 0.28s ease,
+    padding 0.28s ease,
+    justify-content 0.28s ease;
+}
+
+
+.exhStatsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.exhStatCard {
+  background: #fafafc;
+  border: 1px solid #eef2f7;
+  border-radius: 14px;
+  padding: 14px;
+  display: grid;
+  gap: 6px;
+}
+
+.exhStatCard span {
+  color: var(--exh-muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.exhStatCard strong {
+  color: var(--exh-ink);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.exhStatCard small {
+  color: var(--exh-muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.exhMiniPill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: var(--exh-accent-soft);
+  color: var(--exh-accent);
+  font-size: 11px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.exhMiniMetaRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  color: var(--exh-muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.exhSummaryStack {
+  display: grid;
+  gap: 12px;
+}
+
+.exhSummaryItem {
+  padding: 12px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--exh-line);
+}
+
+.exhSummaryItem label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--exh-muted);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.exhSummaryItem strong {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+@media (max-width: 1280px) {
+  .exhStatsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .exhStatsGrid,
+  .exhMiniChartGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.exhBrand {
+  position: relative;
+  height: 34px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  line-height: 1;
+  font-family: "Oxanium", sans-serif;
+  font-size: 28px;
+  letter-spacing: -0.5px;
+}
+
+.exhBrandLong,
+.exhBrandShort {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0;
+  white-space: nowrap;
+}
+
+.exhBrandLight {
+  font-weight: 500;
+}
+
+.exhBrandBold {
+  font-weight: 800;
+}
+
+.exhBrandShort {
+  display: none;
+}
+
+.exhibitorTheme.sidebarCollapsed .exhBrand {
+  justify-content: center;
+}
+
+.exhibitorTheme.sidebarCollapsed .exhBrandLong {
+  display: none;
+}
+
+.exhibitorTheme.sidebarCollapsed .exhBrandShort {
+  display: inline-flex;
+}
+
+/* --- Exhibitor Analytics: make content text more visible --- */
+.exhPageWrap .exhDataTable tbody td {
+  font-size: 15px;
+}
+
+.exhPageWrap .exhDataTable td strong {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.exhPageWrap .exhDataTable td p {
+  font-size: 13px;
+}
+
+.exhPageWrap .exhInsightItem p {
+  font-size: 15px;
+  line-height: 1.6;
+}

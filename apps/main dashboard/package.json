@@ -1,0 +1,11 @@
+{
+  "name": "sentina-main-dashboard",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm install --prefix frontend && npm install --prefix backend && npm install --prefix ../digital_twin_web && pip install -r ../navigation_web/requirements.txt && pip install -r ../../services/ai-detection/requirements.txt && pip install -r ../../services/exhibitor-ai-pipeline/requirements.txt && pip install -r ../../services/Report_export/requirements.txt && pip install -r \"../../services/sentina_operations_html_widget_updated 5/requirements.txt\"",
+    "dev": "concurrently --names \"BACKEND,FRONTEND,TWIN\" --prefix-colors \"blue,green,magenta\" \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\" \"npm run dev --prefix ../digital_twin_web\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

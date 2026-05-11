@@ -1,0 +1,9 @@
+eventId,eventName,venueId,venueName,startDateTimeUtc,endDateTimeUtc,expectedAttendanceTotal,expectedExhibitors,status,personInChargeName,personInChargeEmail,createdAt,updatedAt
+EVT001,Sentina Smart Venue Expo 2025,VN1,DWTC,2025-12-25T11:00:00+00:00,2025-12-27T17:45:00+00:00,89243,100,active,Aisha El-Sayed,aisha.elsayed1@sentina.ai,2025-10-27T11:00:00+00:00,2025-11-14T04:50:32+00:00
+EVT002,Sentina AI & Operations Summit 2025,VN1,DWTC,2025-12-29T08:00:00+00:00,2025-12-31T15:45:00+00:00,89432,100,active,Sara Brown,sara.brown2@sentina.ai,2025-12-14T08:00:00+00:00,2025-12-24T22:51:21+00:00
+EVT003,Green Energy & Sustainability Forum 2026,VN1,DWTC,2026-01-02T10:00:00+00:00,2026-01-03T18:45:00+00:00,56802,100,active,Hassan Ahmed,hassan.ahmed3@sentina.ai,2025-12-17T10:00:00+00:00,2025-12-30T23:39:19+00:00
+EVT004,Secure Facilities & IoT Conference 2026,VN1,DWTC,2026-01-06T11:00:00+00:00,2026-01-08T19:45:00+00:00,91005,100,active,Noor Nasser,noor.nasser4@sentina.ai,2025-12-24T11:00:00+00:00,2025-12-26T16:47:08+00:00
+EVT005,Future of Smart Buildings Showcase 2026,VN1,DWTC,2026-01-11T12:00:00+00:00,2026-01-12T18:45:00+00:00,52950,100,active,Yousef Fischer,yousef.fischer5@sentina.ai,2025-11-20T12:00:00+00:00,2025-12-11T12:51:15+00:00
+EVT006,Venue Operations Excellence Summit 2026,VN1,DWTC,2026-01-15T08:00:00+00:00,2026-01-16T16:45:00+00:00,55950,100,active,Mariam Khan,mariam.khan6@sentina.ai,2025-11-30T08:00:00+00:00,2026-01-14T04:40:11+00:00
+EVT007,AI for Facilities Management Forum 2026,VN1,DWTC,2026-01-19T10:00:00+00:00,2026-01-21T18:45:00+00:00,92477,100,active,Khalid Schmidt,khalid.schmidt7@sentina.ai,2025-11-21T10:00:00+00:00,2025-12-11T19:12:33+00:00
+EVT008,Smart Infrastructure & Automation Expo 2026,VN1,DWTC,2026-01-24T10:00:00+00:00,2026-01-25T15:45:00+00:00,51978,100,active,Lina Ali,lina.ali8@sentina.ai,2025-11-28T10:00:00+00:00,2026-01-12T17:50:35+00:00
