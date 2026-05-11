@@ -3,7 +3,7 @@
 > **Capstone Project** · University of Wollongong in Dubai · CSIT321 · Team Cyber6  
 >  Grade: 85 (High Distinction) · Developed Sep 2025 – Mar 2026
 
-SentinaAI is a full-stack edge–cloud platform built to transform how large convention centres are monitored, managed, and optimised. It unifies IoT-connected systems, edge processing, cloud analytics, AI-driven anomaly detection, and role-based dashboards into one coordinated environment — giving operations managers, SOC analysts, sustainability managers, and exhibitors complete real-time visibility and control.
+SentinaAI is a full-stack edge-cloud platform built to transform how large convention centres are monitored, managed, and optimised. It unifies IoT-connected systems, edge processing, cloud analytics, AI-driven anomaly detection, and role-based dashboards into one coordinated environment, giving operations managers, SOC analysts, sustainability managers, and exhibitors complete real-time visibility and control.
 
 The system was built to address a real problem: large venues generate massive volumes of data from cameras, HVAC systems, occupancy sensors, and environmental monitors, yet this information is typically scattered across disconnected systems with no unified intelligence layer. SentinaAI brings it all together.
 
